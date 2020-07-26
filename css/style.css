@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "MontserratRegular";
+  font-style: normal;
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("fonts/Montserrat-Regular.otf") format("opentype");
+  src: url("fonts/Montserrat-Regular.eot");
+  src: url("fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+  src: url("fonts/Montserrat-Medium.otf") format("opentype");
+  src: url("fonts/Montserrat-Medium.eot");
+  src: url("fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Medium.woff2") format("woff2"), url("fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("fonts/Montserrat-SemiBold.ttf") format("truetype");
+  src: url("fonts/Montserrat-SemiBold.otf") format("opentype");
+  src: url("fonts/Montserrat-SemiBold.eot");
+  src: url("fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-SemiBold.woff2") format("woff2"), url("fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratExtraBold";
+  font-weight: 800;
+  font-style: normal;
+  src: url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  src: url("fonts/Montserrat-ExtraBold.otf") format("opentype");
+  src: url("fonts/Montserrat-ExtraBold.eot");
+  src: url("fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "nimbus_bold";
+  src: url("fonts/NimbusRomNo9LBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nimbus_regular";
+  src: url("fonts/NimbusRomNo9L.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Devonshire";
+  src: url("fonts/Devonshire-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe";
+  src: url("fonts/segoeprb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dancing-script";
+  src: url("fonts/dancing-script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KaushanScript";
+  src: url("fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CroissantOne";
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif12Beta";
+  src: url("fonts/Serif12Beta-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*body et block de page*/
+#bloc_page {
+  width: 1340px;
+  height: 2384;
+}
+
+/*variable*/
+/*header*/
+header {
+  text-align: center;
+  background-color: #57a089;
+  height: 140px;
+}
+
+header strong {
+  font-family: "MontserratRegular",  sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  color: #ddc03c;
+}
+
+/*section1*/
+section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
