@@ -96,7 +96,6 @@
 /*body et block de page*/
 #bloc_page {
   width: 1340px;
-  height: 2384;
 }
 
 /*variable*/
@@ -108,18 +107,172 @@ header {
 }
 
 header strong {
-  font-family: "MontserratRegular",  sans-serif;
-  font-size: 3em;
+  font-family: "MontserratExtraBold",  sans-serif;
+  font-size: 3.5em;
   font-weight: bold;
   position: relative;
   top: 30px;
-  color: #ddc03c;
+  color: yellowgreen;
+  -webkit-animation-name: changement-couleur;
+  animation-name: changement-couleur;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes changement-couleur {
+  0% {
+    color: yellowgreen;
+  }
+  25% {
+    color: #98dd0e;
+  }
+  50% {
+    color: #b2e205;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: #ddc03c;
+  }
+}
+
+@keyframes changement-couleur {
+  0% {
+    color: yellowgreen;
+  }
+  25% {
+    color: #98dd0e;
+  }
+  50% {
+    color: #b2e205;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: #ddc03c;
+  }
+}
+
+/*titres*/
+h1 {
+  position: relative;
+  top: 100px;
 }
 
 /*section1*/
-section1 {
+.section1 .section1-note_enchantee, .section1 .section1-chic_francaise, .section2 .section2-delicepapille, .section2 .section2-palettegout {
+  border: 1px silver solid;
+  -webkit-box-shadow: 2px 2px 10px silver;
+          box-shadow: 2px 2px 10px silver;
+  width: 350px;
+  height: 500px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.section1 .section1-note_enchantee .section1-note_enchantee_paragraphe, .section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe {
+  position: relative;
+  top: 135px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section1 a {
+  text-decoration: none;
+}
+
+.section1 .section1-note_enchantee {
+  background-color: #fdd7d7;
+  margin-left: 250px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.section1 .section1-note_enchantee:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #fcbfbf;
+}
+
+.section1 .section1-note_enchantee .image_note {
+  position: relative;
+  top: 180px;
+  width: 50px;
+  height: 50px;
+}
+
+.section1 .section1-note_enchantee .section1-note_enchantee_paragraphe {
+  font-family: "Devonshire",  sans-serif;
+  color: #3a3636;
+  font-size: 2em;
+}
+
+.section1 .section1-note_enchantee h1 {
+  font-family: 'Segoe', Tahoma,  Verdana, sans-serif;
+  color: #353535;
+  font-size: 2.5em;
+}
+
+.section1 .section1-chic_francaise {
+  margin-right: 250px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.section1 .section1-chic_francaise:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe {
+  top: 180px;
+  font-family: "croissantone";
+  background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
+  background: linear-gradient(to left, #7f49fd, #ec7403);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section1 .section1-chic_francaise h1 {
+  top: 160px;
+  font-size: 2.5em;
+  font-family: serif, Arial, Helvetica;
+  color: #ec7403;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section2 a {
+  text-decoration: none;
+}
+
+.section2 .section2-delicepapille {
+  margin-left: 260px;
+}
+
+.section2 .section2-palettegout {
+  margin-right: 260px;
 }
 /*# sourceMappingURL=style.css.map */
