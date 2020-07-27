@@ -176,7 +176,7 @@ h1 {
   margin-top: 80px;
 }
 
-.section1 .section1-note_enchantee .section1-note_enchantee_paragraphe, .section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe {
+.section1 .section1-note_enchantee .section1-note_enchantee_paragraphe, .section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe, .section2 .section2-delicepapille .section2-delicepapille_paragraphe, .section2 .section2-palettegout .section2-palettegout_paragraphe {
   position: relative;
   top: 135px;
   font-size: 1.5em;
@@ -231,6 +231,7 @@ h1 {
   margin-right: 250px;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  background-color: #faf3f3;
 }
 
 .section1 .section1-chic_francaise:hover {
@@ -241,7 +242,7 @@ h1 {
 
 .section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe {
   top: 180px;
-  font-family: "croissantone";
+  font-family: "croissantone, arial";
   background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
   background: linear-gradient(to left, #7f49fd, #ec7403);
   -webkit-background-clip: text;
@@ -270,9 +271,121 @@ h1 {
 
 .section2 .section2-delicepapille {
   margin-left: 260px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.section2 .section2-delicepapille:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.section2 .section2-delicepapille .section2-delicepapille_paragraphe {
+  top: 160px;
+  font-size: 2.5em;
+  font-family: "dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#0303ca), to(#17bfe9));
+  background: linear-gradient(to right, #0303ca, #17bfe9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section2 .section2-delicepapille h1 {
+  top: 140px;
+  font-size: 2.5em;
+  font-family: segoe, Arial, Helvetica, sans-serif;
+  color: #258da7;
 }
 
 .section2 .section2-palettegout {
   margin-right: 260px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.section2 .section2-palettegout:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.section2 .section2-palettegout .section2-palettegout_paragraphe {
+  top: 160px;
+  font-size: 2.5em;
+  font-family: "KaushanScript", 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section2 .section2-palettegout h1 {
+  top: 140px;
+  font-size: 2.5em;
+  font-family: segoe, Arial, Helvetica, sans-serif;
+  color: #258da7;
+}
+
+.section3 {
+  margin-bottom: 200px;
+}
+
+.section3 .btn {
+  border: 1px green solid;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  position: relative;
+  margin-top: 90px;
+  text-align: center;
+  margin-left: 450px;
+  font-size: 2em;
+  padding: 5px;
+  background-color: #57a089;
+  color: #ddc03c;
+  font-family: MontserratMedium, Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.section3 .btn:hover {
+  -webkit-box-shadow: 5px 5px 12px black;
+          box-shadow: 5px 5px 12px black;
+  background-color: #4e8f7b;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #57a089;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  font-size: 1.5em;
+  font-family: "MontserratRegular", Arial, sans-serif;
+  font-weight: bold;
+}
+
+footer .mention_legale {
+  color: #ddc03c;
+  position: relative;
+  left: 20px;
+  top: 25px;
+}
+
+footer .contactez_nous {
+  color: #ddc03c;
+  position: relative;
+  right: 30px;
+  top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
