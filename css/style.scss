@@ -106,7 +106,6 @@
 
 #bloc_page{
     width: 1340px;
-    height: 2384;
     
 }
 /*variable*/
@@ -120,17 +119,126 @@ header{
     background-color:$cd_font;
     height: 140px;
     strong{
-    font-family:"MontserratRegular",  sans-serif;
-    font-size: 3em;
+    font-family:"MontserratExtraBold",  sans-serif;
+    font-size: 3.5em;
     font-weight: bold;
     position: relative;
     top:30px;
-    color:$cd_txt;
-    
+    color: yellowgreen;
+    -webkit-animation-name:changement-couleur;
+            animation-name:changement-couleur;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    @-webkit-keyframes changement-couleur{
+        0%{color:yellowgreen;}
+        25%{color:rgb(152, 221, 14);}
+        50%{color:rgb(178, 226, 5);}
+        75%{color:yellow;}
+        100%{color:$cd_txt;}
+    }
+    @keyframes changement-couleur{
+        0%{color:yellowgreen;}
+        25%{color:rgb(152, 221, 14);}
+        50%{color:rgb(178, 226, 5);}
+        75%{color:yellow;}
+        100%{color:$cd_txt;}
+    }
     }
 }
-
+/*titres*/
+h1{
+    position: relative;
+    top:100px
+}
 /*section1*/
-section1{
+%border{
+    border:1px silver solid;
+    box-shadow: 2px 2px 10px silver;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    margin-top: 80px;
+}
+%paragraphe{
+    position: relative;
+            top:135px;
+            font-size: 1.5em;
+            text-decoration: none;
+            
+}
+
+.section1{
     display: flex;
+    justify-content: space-around;
+    a{text-decoration: none;}
+    .section1-note_enchantee{
+        @extend %border;
+        background-color:  #fdd7d7;
+        margin-left: 250px;
+        transition: all 200ms ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken( #fdd7d7, 5);
+        }
+        .image_note{
+            position: relative;
+            top:180px;
+            width: 50px;
+            height: 50px;
+        }
+        .section1-note_enchantee_paragraphe{
+            @extend %paragraphe;
+            font-family: "Devonshire",  sans-serif;
+            color:#3a3636;
+            font-size: 2em;
+        }
+        h1{
+            font-family: 'Segoe', Tahoma,  Verdana, sans-serif;
+            color:#353535;
+            font-size: 2.5em;
+        }      
+    }
+    .section1-chic_francaise{
+        @extend %border;
+        margin-right: 250px;
+        transition: all 200ms ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken(white, 5);
+        }
+         
+        .section1-chicfrancaise_paragraphe{
+            @extend %paragraphe;
+            top:180px;
+            font-family: "croissantone";
+            background: linear-gradient(to left, #7f49fd, #ec7403);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color:transparent ;          
+        }
+        h1{
+            top:160px;
+            font-size: 2.5em;
+            font-family: serif, Arial, Helvetica;
+            color:#ec7403;
+        }
+      
+    }
+}
+.section2{
+    display: flex;
+    justify-content: space-around;
+    a{text-decoration: none;}
+    .section2-delicepapille{
+        @extend %border;
+        margin-left: 260px;
+    }
+    .section2-palettegout{
+        @extend %border;
+        margin-right: 260px;
+    }
 }
