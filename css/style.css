@@ -410,13 +410,13 @@ h1 {
   margin-top: 0px;
 }
 
-.menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2, .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2 {
+.menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2, .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2, .menu3-section2 h2, .menu3-section3 h2, .menu3-section4 h2 {
   text-align: center;
   font-size: 2em;
   color: black;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude, .menu1-section3 .menu-point_orgue .menu-orgue, .menu2-section2 .menu-pour_appetit .menu-appetit, .menu2-section3 .menu-plaisir_papille .menu-plaisir {
+.menu1-section2 .menu-preludes .menu-prelude, .menu1-section3 .menu-point_orgue .menu-orgue, .menu2-section2 .menu-pour_appetit .menu-appetit, .menu2-section3 .menu-plaisir_papille .menu-plaisir, .menu3-section2 .menu-bien_commence .menu-commence, .menu3-section3 .menu-bien_continuer .menu-continuer, .menu3-section4 .menu-bien_terminer .menu-terminer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,12 +426,12 @@ h1 {
           justify-content: space-between;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude .menu, .menu1-section3 .menu-point_orgue .menu-orgue .menu, .menu2-section2 .menu-pour_appetit .menu-appetit .menu, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
+.menu1-section2 .menu-preludes .menu-prelude .menu, .menu1-section3 .menu-point_orgue .menu-orgue .menu, .menu2-section2 .menu-pour_appetit .menu-appetit .menu, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu, .menu3-section2 .menu-bien_commence .menu-commence .menu, .menu3-section3 .menu-bien_continuer .menu-continuer .menu, .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
   margin-left: 300px;
   font-size: 1.2em;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude .menu-prix, .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix, .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
+.menu1-section2 .menu-preludes .menu-prelude .menu-prix, .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix, .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix, .menu3-section2 .menu-bien_commence .menu-commence .menu-prix, .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix, .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
   margin-right: 350px;
 }
 
@@ -499,7 +499,7 @@ h1 {
 }
 
 .menu2-header h2 {
-  font-family: sans-serif;
+  font-family: "CroissantOne", sans-serif;
   background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
   background: linear-gradient(to left, #7f49fd, #ec7403);
   -webkit-background-clip: text;
@@ -554,12 +554,82 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 300px;
 }
 
 .menu2-section4 .menu-gourmendise_sucrée .menu-sucré li {
   margin-top: 10px;
+}
+
+#bloc_page_menu3 {
+  background-color: #ecebe9;
+}
+
+.menu3-section1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu3-section1 h2 {
+  font-family: "Devonshire",  sans-serif;
+  font-size: 4em;
+  margin-bottom: 100px;
+  font-family: "dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#0303ca), to(#17bfe9));
+  background: linear-gradient(to right, #0303ca, #17bfe9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3-section2 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu3-section2 h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-bottom: 50px;
+}
+
+.menu3-section2 .menu-bien_commence {
+  font-size: 1em;
+}
+
+.menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
+  font-size: 1.3em;
+}
+
+.menu3-section3 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu3-section3 h2 {
+  font-weight: 100;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
+  font-size: 1.5em;
+}
+
+.menu3-section4 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu3-section4 h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
+  font-size: 1.5em;
 }
 
 footer {

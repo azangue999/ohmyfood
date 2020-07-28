@@ -87,9 +87,12 @@
     width: 1340px;
     
 }
+
 /*variable*/
+
 $cd_font: #57a089;
 $cd_txt:#ddc03c;
+
 
 /*header*/
 
@@ -295,9 +298,13 @@ h1{
 
     }
 }
+
 //fin menu principal
 
+
+
 //début menu1
+
 #bloc_page_menu1{
     background-color:  #fdd7d7;
 }
@@ -471,7 +478,7 @@ $menu2-family:sans-serif;
    
  
     h2{
-        font-family: $menu2-family;
+        font-family: "CroissantOne", sans-serif;
         background: linear-gradient(to left, #7f49fd, #ec7403);
         -webkit-background-clip: text;
                 background-clip: text;
@@ -560,7 +567,7 @@ $menu2-family:sans-serif;
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-left: 300px;
       li{
           margin-top: 10px;
@@ -572,6 +579,110 @@ $menu2-family:sans-serif;
 
 }
 
+//fin menu2
+
+
+//debut menu 3
+
+#bloc_page_menu3{
+    background-color: rgb(236, 235, 233);
+}
+.menu3-section1{
+    text-align: center;
+    margin-top: 20px;
+    
+    h2{
+        font-family: "Devonshire",  sans-serif;
+        font-size:4em;
+        margin-bottom: 100px;
+        font-family:"dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
+        background:linear-gradient(to right, rgb(3, 3, 202), rgb(23, 191, 233));
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+   
+}
+
+.menu3-section2{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    
+    h2{
+        @extend %menu1-titre;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-bottom: 50px;
+      
+    }
+.menu-bien_commence{
+    font-size: 1em;
+    .menu-commence{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1.3em;
+        }
+    }
+
+}
+
+}
+
+
+.menu3-section3{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+.menu-bien_continuer{
+    
+    .menu-continuer{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1.5em;
+        }
+    }
+
+}
+
+}
+
+.menu3-section4{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+       font-size: 1.5em;
+       font-weight: 100;
+       margin-bottom: 50px;
+    }
+    .menu-bien_terminer{
+        .menu-terminer{
+            @extend  %menu1-menu;
+            .menu{
+               @extend %menu-list;
+            }
+            .menu-prix{
+               @extend %menu-prix;
+               font-size: 1.5em;
+            }
+        }
+    
+    }
+
+}
 
 
 
