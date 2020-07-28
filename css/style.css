@@ -1,9 +1,17 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MontserratRegular";
   src: url("fonts/Montserrat-Regular.ttf") format("truetype");
   src: url("fonts/Montserrat-Regular.otf") format("opentype");
   src: url("fonts/Montserrat-Regular.eot");
   src: url("fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CroissantOne";
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -210,7 +218,7 @@ h1 {
 
 .section1 .section1-chic_francaise .section1-chicfrancaise_paragraphe {
   top: 180px;
-  font-family: "croissantone, arial";
+  font-family: "CroissantOne", Arial, sans-serif;
   background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
   background: linear-gradient(to left, #7f49fd, #ec7403);
   -webkit-background-clip: text;
@@ -341,13 +349,13 @@ h1 {
   margin-bottom: 0px;
   position: relative;
   -webkit-animation-name: dancing;
-          animation-name: dancing;
+  animation-name: dancing;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes dancing {
@@ -402,13 +410,13 @@ h1 {
   margin-top: 0px;
 }
 
-.menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2 {
+.menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2, .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2 {
   text-align: center;
   font-size: 2em;
   color: black;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude, .menu1-section3 .menu-point_orgue .menu-orgue {
+.menu1-section2 .menu-preludes .menu-prelude, .menu1-section3 .menu-point_orgue .menu-orgue, .menu2-section2 .menu-pour_appetit .menu-appetit, .menu2-section3 .menu-plaisir_papille .menu-plaisir {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,12 +426,12 @@ h1 {
           justify-content: space-between;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude .menu, .menu1-section3 .menu-point_orgue .menu-orgue .menu {
+.menu1-section2 .menu-preludes .menu-prelude .menu, .menu1-section3 .menu-point_orgue .menu-orgue .menu, .menu2-section2 .menu-pour_appetit .menu-appetit .menu, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
   margin-left: 300px;
   font-size: 1.2em;
 }
 
-.menu1-section2 .menu-preludes .menu-prelude .menu-prix, .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
+.menu1-section2 .menu-preludes .menu-prelude .menu-prix, .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix, .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix, .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
   margin-right: 350px;
 }
 
@@ -479,6 +487,79 @@ h1 {
   font-family: "Devonshire",  sans-serif;
   font-size: 2.5em;
   margin-top: 0px;
+}
+
+#bloc_page_menu2 {
+  background-color: #faf8f8;
+}
+
+.menu2-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu2-header h2 {
+  font-family: sans-serif;
+  background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
+  background: linear-gradient(to left, #7f49fd, #ec7403);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  margin-bottom: 100px;
+}
+
+.menu2-section2 {
+  font-family: sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 100px;
+  background: -webkit-gradient(linear, right top, left top, from(#f58c03), to(#f58c03));
+  background: linear-gradient(to left, #f58c03, #f58c03);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu2-section2 .menu-pour_appetit .menu-appetit .menu {
+  margin-left: 300px;
+}
+
+.menu2-section3 {
+  font-family: sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 100px;
+  background: -webkit-gradient(linear, right top, left top, from(#ad19ca), to(#ad19ca));
+  background: linear-gradient(to left, #ad19ca, #ad19ca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu2-section4 {
+  font-family: sans-serif;
+  background: -webkit-gradient(linear, right top, left top, from(blue), to(blue));
+  background: linear-gradient(to left, blue, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 100px;
+}
+
+.menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  font-size: 1.2em;
+  margin-left: 300px;
+}
+
+.menu2-section4 .menu-gourmendise_sucrée .menu-sucré li {
+  margin-top: 10px;
 }
 
 footer {
