@@ -54,6 +54,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Courgette";
+  src: url("fonts/Courgette-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*body et block de page*/
 #bloc_page {
   width: 1340px;
@@ -317,6 +324,161 @@ h1 {
   -webkit-box-shadow: 5px 5px 12px black;
           box-shadow: 5px 5px 12px black;
   background-color: #4e8f7b;
+}
+
+#bloc_page_menu1 {
+  background-color: #fdd7d7;
+}
+
+.menu1-section1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu1-section1 .image_note {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+  position: relative;
+  -webkit-animation-name: dancing;
+          animation-name: dancing;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes dancing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes dancing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.menu1-section1 h2 {
+  font-family: "Devonshire",  sans-serif;
+  font-size: 4em;
+  margin-top: 0px;
+}
+
+.menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2 {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.menu1-section2 .menu-preludes .menu-prelude, .menu1-section3 .menu-point_orgue .menu-orgue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu1-section2 .menu-preludes .menu-prelude .menu, .menu1-section3 .menu-point_orgue .menu-orgue .menu {
+  margin-left: 300px;
+  font-size: 1.2em;
+}
+
+.menu1-section2 .menu-preludes .menu-prelude .menu-prix, .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
+  margin-right: 350px;
+}
+
+.menu1-section2 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu1-section3 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu1-section4 {
+  font-family: "courgette", sans-serif;
+  margin-bottom: 100px;
+}
+
+.menu1-section4 .menu-mouvement_final .menu-final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  font-size: 1.2em;
+  margin-left: 300px;
+}
+
+.menu1-section4 .menu-mouvement_final .menu-final li {
+  margin-top: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 500px;
+}
+
+.footer .image_note {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0px;
+  position: relative;
+  right: 10px;
+}
+
+.footer h2 {
+  font-family: "Devonshire",  sans-serif;
+  font-size: 2.5em;
+  margin-top: 0px;
 }
 
 footer {

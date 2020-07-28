@@ -63,7 +63,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "Courgette";
+    src: url("fonts/Courgette-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -118,6 +123,8 @@ header{
     }
     }
 }
+//menu principal
+
 /*titres*/
 h1{
     position: relative;
@@ -283,6 +290,163 @@ h1{
 
     }
 }
+//fin menu principal
+
+//début menu1
+#bloc_page_menu1{
+    background-color:  #fdd7d7;
+}
+.menu1-section1{
+    text-align: center;
+    margin-top: 20px;
+    .image_note{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0px;
+        position: relative;
+        animation-name: dancing;
+       animation-duration: 5s;
+       animation-timing-function: ease-in-out;
+       animation-iteration-count: infinite;
+       @keyframes dancing{
+           0%{transform: scale(1);}
+           25%{transform: scale(1.1);}
+           50%{transform: scale(1);}
+           75%{transform: scale(1.1);}
+           100%{transform: scale(1);}
+          
+       }
+    }
+    h2{
+        font-family: "Devonshire",  sans-serif;
+        font-size:4em;
+        margin-top: 0px;
+    }
+   
+}
+
+
+$menu1-family:"courgette",sans-serif; 
+%menu1-titre{
+    text-align: center;
+    font-size: 2em;
+    color:black;
+}
+%menu1-menu{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+%menu-list{
+    margin-left: 300px;
+    font-size: 1.2em;
+}
+%menu-prix{
+    margin-right: 350px;
+}
+
+
+.menu1-section2{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+      
+    }
+.menu-preludes{
+    
+    .menu-prelude{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+        }
+    }
+
+}
+
+}
+
+
+.menu1-section3{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+      
+    }
+.menu-point_orgue{
+    
+    .menu-orgue{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+        }
+    }
+
+}
+
+}
+
+.menu1-section4{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+      
+    }
+.menu-mouvement_final{
+    
+    .menu-final{
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      font-size: 1.2em;
+      margin-left: 300px;
+      li{
+          margin-top: 10px;
+      }
+       
+    }
+
+}
+
+}
+.footer{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    .image_note{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0px;
+        position: relative;
+        right: 10px;
+        
+
+    }
+    h2{
+        font-family: "Devonshire",  sans-serif;
+        font-size:2.5em;
+        margin-top: 0px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+//footer pour tous les menus
 footer{
     display: flex;
     justify-content: space-between;
