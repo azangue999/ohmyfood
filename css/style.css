@@ -1,6 +1,5 @@
 @font-face {
   font-family: "MontserratRegular";
-  font-style: normal;
   src: url("fonts/Montserrat-Regular.ttf") format("truetype");
   src: url("fonts/Montserrat-Regular.otf") format("opentype");
   src: url("fonts/Montserrat-Regular.eot");
@@ -28,16 +27,6 @@
 }
 
 @font-face {
-  font-family: "MontserratExtraBold";
-  font-weight: 800;
-  font-style: normal;
-  src: url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  src: url("fonts/Montserrat-ExtraBold.otf") format("opentype");
-  src: url("fonts/Montserrat-ExtraBold.eot");
-  src: url("fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("fonts/Montserrat-ExtraBold.woff") format("woff");
-}
-
-@font-face {
   font-family: "nimbus_bold";
   src: url("fonts/NimbusRomNo9LBold.ttf") format("truetype");
   font-weight: normal;
@@ -52,13 +41,6 @@
 }
 
 @font-face {
-  font-family: "Devonshire";
-  src: url("fonts/Devonshire-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Segoe";
   src: url("fonts/segoeprb.ttf") format("truetype");
   font-weight: normal;
@@ -68,27 +50,6 @@
 @font-face {
   font-family: "dancing-script";
   src: url("fonts/dancing-script.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "KaushanScript";
-  src: url("fonts/KaushanScript-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "CroissantOne";
-  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Serif12Beta";
-  src: url("fonts/Serif12Beta-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -314,7 +275,7 @@ h1 {
 .section2 .section2-palettegout .section2-palettegout_paragraphe {
   top: 160px;
   font-size: 2.5em;
-  font-family: "KaushanScript", 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: "kaushan script", Tahoma, Verdana, sans-serif;
   background: -webkit-gradient(linear, left top, right top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
   background: linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
   -webkit-background-clip: text;
