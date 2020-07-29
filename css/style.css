@@ -436,7 +436,7 @@ h1 {
   margin-right: 350px;
 }
 
-.menu1-section2 h2::before, .menu1-section2 h2::after, .menu1-section3 h2::before, .menu1-section3 h2::after, .menu1-section4 h2::before, .menu1-section4 h2::after {
+.menu1-section2 h2::before, .menu1-section2 h2::after, .menu1-section3 h2::before, .menu1-section3 h2::after, .menu1-section4 h2::before, .menu1-section4 h2::after, .menu2-section2 h2::before, .menu2-section2 h2::after, .menu2-section3 h2::before, .menu2-section3 h2::after, .menu2-section4 h2::before, .menu2-section4 h2::after {
   content: '';
   position: absolute;
   width: 200px;
@@ -557,6 +557,27 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.menu2-section2 h2 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.menu2-section2 h2::before {
+  top: 365px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: #f58c03;
+}
+
+.menu2-section2 h2::after {
+  top: 365px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: #f58c03;
+}
+
 .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
   margin-left: 300px;
 }
@@ -572,6 +593,27 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.menu2-section3 h2 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.menu2-section3 h2::before {
+  top: 655px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: #ad19ca;
+}
+
+.menu2-section3 h2::after {
+  top: 655px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: #ad19ca;
+}
+
 .menu2-section4 {
   font-family: sans-serif;
   background: -webkit-gradient(linear, right top, left top, from(blue), to(blue));
@@ -580,6 +622,26 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 100px;
+}
+
+.menu2-section4 h2 {
+  font-size: 1.5em;
+}
+
+.menu2-section4 h2::before {
+  top: 940px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: blue;
+}
+
+.menu2-section4 h2::after {
+  top: 940px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: blue;
 }
 
 .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {

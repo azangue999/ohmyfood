@@ -538,6 +538,25 @@ $menu2-family:sans-serif;
     
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            top: 365px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(245, 140, 3);
+          }
+          &::after{
+            @extend %trait;
+            top: 365px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(245, 140, 3);
+          }
+          
       
     }
 .menu-pour_appetit{
@@ -564,11 +583,31 @@ $menu2-family:sans-serif;
     margin-bottom: 100px;
     background: linear-gradient(to left, rgb(173, 25, 202), rgb(173, 25, 202)  );
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    
    
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            top: 655px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(173, 25, 202);
+          }
+          &::after{
+            @extend %trait;
+            top: 655px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(173, 25, 202);
+          }
       
     }
 .menu-plaisir_papille{
@@ -596,6 +635,23 @@ $menu2-family:sans-serif;
     margin-bottom: 100px;
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        &::before{
+            @extend %trait;
+            top: 940px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: blue;
+          }
+          &::after{
+            @extend %trait;
+            top: 940px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: blue;
+          }
       
     }
 .menu-gourmendise_sucrée{
