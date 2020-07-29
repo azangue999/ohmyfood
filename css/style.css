@@ -408,6 +408,7 @@ h1 {
   font-family: "Devonshire",  sans-serif;
   font-size: 4em;
   margin-top: 0px;
+  position: relative;
 }
 
 .menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2, .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2, .menu3-section2 h2, .menu3-section3 h2, .menu3-section4 h2, .menu4-section2 h2, .menu4-section3 h2, .menu4-section4 h2 {
@@ -435,9 +436,28 @@ h1 {
   margin-right: 350px;
 }
 
+.menu1-section2 h2::before, .menu1-section2 h2::after, .menu1-section3 h2::before, .menu1-section3 h2::after, .menu1-section4 h2::before, .menu1-section4 h2::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  top: 20px;
+  left: 345px;
+  background-color: black;
+  display: inline-block;
+}
+
 .menu1-section2 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+}
+
+.menu1-section2 h2 {
+  position: relative;
+}
+
+.menu1-section2 h2::after {
+  left: 785px;
 }
 
 .menu1-section3 {
@@ -445,9 +465,26 @@ h1 {
   margin-bottom: 100px;
 }
 
+.menu1-section3 h2 {
+  position: relative;
+}
+
+.menu1-section3 h2::after {
+  left: 785px;
+}
+
 .menu1-section4 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+}
+
+.menu1-section4 h2 {
+  position: relative;
+  font-size: 1.9em;
+}
+
+.menu1-section4 h2::after {
+  left: 785px;
 }
 
 .menu1-section4 .menu-mouvement_final .menu-final {
