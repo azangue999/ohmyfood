@@ -408,6 +408,7 @@ h1 {
   font-family: "Devonshire",  sans-serif;
   font-size: 4em;
   margin-top: 0px;
+  position: relative;
 }
 
 .menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2, .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2, .menu3-section2 h2, .menu3-section3 h2, .menu3-section4 h2, .menu4-section2 h2, .menu4-section3 h2, .menu4-section4 h2 {
@@ -435,9 +436,28 @@ h1 {
   margin-right: 350px;
 }
 
+.menu1-section2 h2::before, .menu1-section2 h2::after, .menu1-section3 h2::before, .menu1-section3 h2::after, .menu1-section4 h2::before, .menu1-section4 h2::after, .menu2-section2 h2::before, .menu2-section2 h2::after, .menu2-section3 h2::before, .menu2-section3 h2::after, .menu2-section4 h2::before, .menu2-section4 h2::after, .menu3-section2 h2::before, .menu3-section2 h2::after, .menu3-section3 h2::before, .menu3-section3 h2::after, .menu3-section4 h2::before, .menu3-section4 h2::after, .menu4-section2 h2::before, .menu4-section2 h2::after, .menu4-section3 h2::before, .menu4-section3 h2::after, .menu4-section4 h2::before, .menu4-section4 h2::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  top: 20px;
+  left: 345px;
+  background-color: black;
+  display: inline-block;
+}
+
 .menu1-section2 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+}
+
+.menu1-section2 h2 {
+  position: relative;
+}
+
+.menu1-section2 h2::after {
+  left: 785px;
 }
 
 .menu1-section3 {
@@ -445,9 +465,26 @@ h1 {
   margin-bottom: 100px;
 }
 
+.menu1-section3 h2 {
+  position: relative;
+}
+
+.menu1-section3 h2::after {
+  left: 785px;
+}
+
 .menu1-section4 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+}
+
+.menu1-section4 h2 {
+  position: relative;
+  font-size: 1.9em;
+}
+
+.menu1-section4 h2::after {
+  left: 785px;
 }
 
 .menu1-section4 .menu-mouvement_final .menu-final {
@@ -520,6 +557,27 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.menu2-section2 h2 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.menu2-section2 h2::before {
+  top: 365px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: #f58c03;
+}
+
+.menu2-section2 h2::after {
+  top: 365px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: #f58c03;
+}
+
 .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
   margin-left: 300px;
 }
@@ -535,6 +593,27 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.menu2-section3 h2 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.menu2-section3 h2::before {
+  top: 655px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: #ad19ca;
+}
+
+.menu2-section3 h2::after {
+  top: 655px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: #ad19ca;
+}
+
 .menu2-section4 {
   font-family: sans-serif;
   background: -webkit-gradient(linear, right top, left top, from(blue), to(blue));
@@ -543,6 +622,26 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 100px;
+}
+
+.menu2-section4 h2 {
+  font-size: 1.5em;
+}
+
+.menu2-section4 h2::before {
+  top: 940px;
+  left: 200px;
+  height: 8px;
+  width: 300px;
+  background-color: blue;
+}
+
+.menu2-section4 h2::after {
+  top: 940px;
+  left: 850px;
+  height: 8px;
+  width: 300px;
+  background-color: blue;
 }
 
 .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
@@ -592,6 +691,23 @@ h1 {
   font-size: 1.5em;
   font-weight: 100;
   padding-bottom: 50px;
+  position: relative;
+}
+
+.menu3-section2 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 220px;
+  top: 10px;
+  background-color: #1010bb;
+}
+
+.menu3-section2 h2::after {
+  left: 820px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background-color: #1010bb;
 }
 
 .menu3-section2 .menu-bien_commence {
@@ -611,6 +727,23 @@ h1 {
   font-weight: 100;
   font-size: 1.5em;
   margin-bottom: 50px;
+  position: relative;
+}
+
+.menu3-section3 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 220px;
+  top: 10px;
+  background-color: rgba(0, 102, 255, 0.8);
+}
+
+.menu3-section3 h2::after {
+  left: 820px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background-color: rgba(0, 102, 255, 0.8);
 }
 
 .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
@@ -620,12 +753,29 @@ h1 {
 .menu3-section4 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .menu3-section4 h2 {
   font-size: 1.5em;
   font-weight: 100;
   margin-bottom: 50px;
+}
+
+.menu3-section4 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 220px;
+  top: 10px;
+  background-color: blue;
+}
+
+.menu3-section4 h2::after {
+  left: 820px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background-color: blue;
 }
 
 .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
@@ -655,12 +805,31 @@ h1 {
 .menu4-section2 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .menu4-section2 h2 {
   font-size: 1.5em;
   font-weight: 100;
   padding-bottom: 50px;
+}
+
+.menu4-section2 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 240px;
+  top: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+}
+
+.menu4-section2 h2::after {
+  left: 800px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background: -webkit-gradient(linear, right top, left top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
 }
 
 .menu4-section2 .menu-esquisse {
@@ -674,12 +843,31 @@ h1 {
 .menu4-section3 {
   font-family: "courgette", sans-serif;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .menu4-section3 h2 {
   font-weight: 100;
   font-size: 1.5em;
   margin-bottom: 50px;
+}
+
+.menu4-section3 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 240px;
+  top: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+}
+
+.menu4-section3 h2::after {
+  left: 800px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background: -webkit-gradient(linear, right top, left top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
 }
 
 .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
@@ -695,6 +883,25 @@ h1 {
   font-size: 1.5em;
   font-weight: 100;
   margin-bottom: 50px;
+  position: relative;
+}
+
+.menu4-section4 h2::before {
+  width: 300px;
+  height: 6px;
+  left: 240px;
+  top: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+}
+
+.menu4-section4 h2::after {
+  left: 800px;
+  width: 300px;
+  height: 6px;
+  top: 15px;
+  background: -webkit-gradient(linear, right top, left top, from(RGBa(70, 202, 70, 1)), to(RGBa(70, 202, 70, 0.4)));
+  background: linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
 }
 
 .menu4-section4 .menu-sommet_art .menu-art .menu-prix {

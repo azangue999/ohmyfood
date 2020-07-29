@@ -345,6 +345,8 @@ h1{
         font-family: "Devonshire",  sans-serif;
         font-size:4em;
         margin-top: 0px;
+        position: relative;
+      
     }
    
 }
@@ -369,13 +371,30 @@ $menu1-family:"courgette",sans-serif;
     margin-right: 350px;
 }
 
+%trait{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    top:20px;
+    left: 345px;
+    background-color: black;
+    display: inline-block;
+}
 
 .menu1-section2{
     font-family:$menu1-family;
     margin-bottom: 100px;
     h2{
         @extend %menu1-titre;
-      
+       position: relative;
+       &::before{
+        @extend %trait;
+      }
+      &::after{
+          @extend %trait;
+          left:785px;
+      }
     }
 .menu-preludes{
     
@@ -399,6 +418,14 @@ $menu1-family:"courgette",sans-serif;
     margin-bottom: 100px;
     h2{
         @extend %menu1-titre;
+        position: relative;
+        &::before{
+            @extend %trait;
+          }
+          &::after{
+              @extend %trait;
+              left:785px;
+          }
       
     }
 .menu-point_orgue{
@@ -422,6 +449,16 @@ $menu1-family:"courgette",sans-serif;
     margin-bottom: 100px;
     h2{
         @extend %menu1-titre;
+        position: relative;
+        font-size: 1.9em;
+        &::before{
+            @extend %trait;
+           
+          }
+          &::after{
+              @extend %trait;
+              left:785px;
+          }
       
     }
 .menu-mouvement_final{
@@ -501,6 +538,25 @@ $menu2-family:sans-serif;
     
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            top: 365px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(245, 140, 3);
+          }
+          &::after{
+            @extend %trait;
+            top: 365px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(245, 140, 3);
+          }
+          
       
     }
 .menu-pour_appetit{
@@ -527,11 +583,31 @@ $menu2-family:sans-serif;
     margin-bottom: 100px;
     background: linear-gradient(to left, rgb(173, 25, 202), rgb(173, 25, 202)  );
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    
    
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            top: 655px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(173, 25, 202);
+          }
+          &::after{
+            @extend %trait;
+            top: 655px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: rgb(173, 25, 202);
+          }
       
     }
 .menu-plaisir_papille{
@@ -559,6 +635,23 @@ $menu2-family:sans-serif;
     margin-bottom: 100px;
     h2{
         @extend %menu1-titre;
+        font-size: 1.5em;
+        &::before{
+            @extend %trait;
+            top: 940px;
+            left: 200px;
+            height: 8px;
+            width: 300px;
+            background-color: blue;
+          }
+          &::after{
+            @extend %trait;
+            top: 940px;
+            left: 850px;
+            height: 8px;
+            width: 300px;
+            background-color: blue;
+          }
       
     }
 .menu-gourmendise_sucrée{
@@ -613,6 +706,24 @@ $menu2-family:sans-serif;
         font-size: 1.5em;
         font-weight: 100;
         padding-bottom: 50px;
+        position: relative;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 220px;
+            top:10px;
+            background-color:rgb(16, 16, 187);
+           
+          }
+          &::after{
+              @extend %trait;
+              left:820px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:rgb(16, 16, 187);
+          }
       
     }
 .menu-bien_commence{
@@ -641,6 +752,24 @@ $menu2-family:sans-serif;
         font-weight: 100;
         font-size: 1.5em;
         margin-bottom: 50px;
+        position: relative;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 220px;
+            top:10px;
+            background-color:rgba(0, 102, 255, 0.8);
+           
+          }
+          &::after{
+              @extend %trait;
+              left:820px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:rgba(0, 102, 255, 0.8);
+          }
     }
 .menu-bien_continuer{
     
@@ -662,11 +791,29 @@ $menu2-family:sans-serif;
 .menu3-section4{
     font-family:$menu1-family;
     margin-bottom: 100px;
+    position: relative;
     h2{
         @extend %menu1-titre;
        font-size: 1.5em;
        font-weight: 100;
        margin-bottom: 50px;
+       &::before{
+        @extend %trait;
+        width: 300px;
+        height: 6px;
+        left: 220px;
+        top:10px;
+        background-color:blue;
+       
+      }
+      &::after{
+          @extend %trait;
+          left:820px;
+          width: 300px;
+          height: 6px;
+          top:15px;
+          background-color:blue;
+      }
     }
     .menu-bien_terminer{
         .menu-terminer{
@@ -710,12 +857,30 @@ $menu2-family:sans-serif;
 .menu4-section2{
     font-family:$menu1-family;
     margin-bottom: 100px;
+    position: relative;
     
     h2{
         @extend %menu1-titre;
         font-size: 1.5em;
         font-weight: 100;
         padding-bottom: 50px;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 240px;
+            top:10px;
+            background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+           
+          }
+          &::after{
+              @extend %trait;
+              left:800px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+          }
       
     }
 .menu-esquisse{
@@ -739,11 +904,29 @@ $menu2-family:sans-serif;
 .menu4-section3{
     font-family:$menu1-family;
     margin-bottom: 100px;
+    position: relative;
     h2{
         @extend %menu1-titre;
         font-weight: 100;
         font-size: 1.5em;
         margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 240px;
+            top:10px;
+            background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+           
+          }
+          &::after{
+              @extend %trait;
+              left:800px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+          }
     }
 .menu-oeuvre_maitre{
     
@@ -770,6 +953,24 @@ $menu2-family:sans-serif;
        font-size: 1.5em;
        font-weight: 100;
        margin-bottom: 50px;
+       position: relative;
+       &::before{
+        @extend %trait;
+        width: 300px;
+        height: 6px;
+        left: 240px;
+        top:10px;
+        background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+       
+      }
+      &::after{
+          @extend %trait;
+          left:800px;
+          width: 300px;
+          height: 6px;
+          top:15px;
+          background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+      }
     }
     .menu-sommet_art{
         .menu-art{
