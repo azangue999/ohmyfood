@@ -1127,4 +1127,624 @@ footer .contactez_nous {
     margin-left: 300px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .menu1-section1 .image_note {
+    width: 50px;
+    height: 50px;
+  }
+  .menu1-section1 .menu1-section1_titre {
+    font-size: 2em;
+  }
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu1-section2 .menu-preludes {
+    width: auto;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude {
+    display: block;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude .menu {
+    font-size: 1.2em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu1-section3 .menu-point_orgue {
+    width: auto;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue {
+    display: block;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu1-section4 .menu-mouvement_final {
+    width: auto;
+  }
+  .menu1-section4 .menu-mouvement_final .menu-final {
+    margin-left: 0cm;
+  }
+  .menu1-section4 .menu-mouvement_final .menu-final .menu {
+    position: static;
+    color: #0303ca;
+    margin-top: 1.5em;
+    font-size: 1em;
+  }
+  .footer {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu1-section2 .menu-preludes {
+    width: auto;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude {
+    display: block;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu1-section2 .menu-preludes .menu-prelude .menu-prix {
+    position: relative;
+    right: 100px;
+    bottom: 0px;
+  }
+  .menu1-section3 .menu-point_orgue {
+    width: auto;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue {
+    display: block;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
+    position: relative;
+    margin-left: 100px;
+    bottom: 0px;
+  }
+  .menu1-section4 .menu-mouvement_final {
+    width: auto;
+  }
+  .menu1-section4 .menu-mouvement_final .menu-final {
+    margin-left: 0cm;
+  }
+  .menu1-section4 .menu-mouvement_final .menu-final .menu {
+    position: static;
+    color: #0303ca;
+    margin-top: 1.5em;
+    font-size: 0.8em;
+  }
+  .footer {
+    margin-left: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu2-section2 h2::before, .menu2-section3 h2::before, .menu2-section4 h2::before {
+    display: none;
+  }
+  .menu2-section2 h2::after, .menu2-section3 h2::after, .menu2-section4 h2::after {
+    display: none;
+  }
+  .menu2-section2 .menu-pour_appetit {
+    width: auto;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit {
+    display: block;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
+    top: 50px;
+    margin-left: 700px;
+  }
+  .menu2-section3 .menu-plaisir_papille {
+    width: auto;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir {
+    display: block;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
+    margin-left: 700px;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée {
+    width: auto;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
+    margin-left: 80px;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
+    color: #0303ca;
+    margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu2-header .menu2-header_titre {
+    font-size: 2em;
+  }
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu2-section2 .menu-pour_appetit {
+    width: auto;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit {
+    display: block;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
+    font-size: 1.1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu2-section3 .menu-plaisir_papille {
+    width: auto;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir {
+    display: block;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée {
+    width: auto;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
+    margin-left: 0cm;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
+    color: #0303ca;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu2-section2 .menu-pour_appetit {
+    width: auto;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit {
+    display: block;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
+    font-size: 0.9em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
+    margin-left: 100px;
+    font-size: 0.8em;
+    bottom: 0px;
+  }
+  .menu2-section3 .menu-plaisir_papille {
+    width: auto;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir {
+    display: block;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
+    font-size: 0.9em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
+    font-size: 0.9em;
+    bottom: 0px;
+    margin-left: 100px;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée {
+    width: auto;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
+    margin-left: 0cm;
+  }
+  .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
+    color: #0303ca;
+    margin-top: 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu3-section2 h2::before, .menu3-section3 h2::before, .menu3-section4 h2::before {
+    display: none;
+  }
+  .menu3-section2 h2::after, .menu3-section3 h2::after, .menu3-section4 h2::after {
+    display: none;
+  }
+  .menu3-section2 .menu-bien_commence {
+    width: auto;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence {
+    display: block;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
+    font-size: 1em;
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+  }
+  .menu3-section3 .menu-bien_continuer {
+    width: auto;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer {
+    display: block;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+    font-size: 1em;
+  }
+  .menu3-section4 .menu-bien_terminer {
+    width: auto;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer {
+    display: block;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu3-section1 .menu3-section1_titre {
+    font-size: 2em;
+  }
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu3-section2 .menu-bien_commence {
+    width: auto;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence {
+    display: block;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu {
+    font-size: 1.2em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu3-section3 .menu-bien_continuer {
+    width: auto;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer {
+    display: block;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu3-section4 .menu-bien_terminer {
+    width: auto;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer {
+    display: block;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu3-section2 .menu-bien_commence {
+    width: auto;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence {
+    display: block;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
+    position: relative;
+    right: 100px;
+    bottom: 0px;
+    font-size: 0.9em;
+  }
+  .menu3-section3 .menu-bien_continuer {
+    width: auto;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer {
+    display: block;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
+    position: relative;
+    margin-left: 100px;
+    bottom: 0px;
+    font-size: 0.9em;
+  }
+  .menu3-section4 .menu-bien_terminer {
+    width: auto;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer {
+    display: block;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu4-section2 h2::before, .menu4-section3 h2::before, .menu4-section4 h2::before {
+    display: none;
+  }
+  .menu4-section2 h2::after, .menu4-section3 h2::after, .menu4-section4 h2::after {
+    display: none;
+  }
+  .menu4-section2 .menu-esquisse {
+    width: auto;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste {
+    display: block;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu-prix {
+    font-size: 1em;
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+  }
+  .menu4-section3 .menu-oeuvre_maitre {
+    width: auto;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre {
+    display: block;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+    font-size: 1em;
+  }
+  .menu4-section4 .menu-sommet_art {
+    width: auto;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art {
+    display: block;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu {
+    margin-left: 90px;
+    color: #280bc9;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu-prix {
+    position: relative;
+    margin-left: 700px;
+    bottom: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .menu4-section1 .menu4-section1_titre {
+    font-size: 2em;
+  }
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu4-section2 .menu-esquisse {
+    width: auto;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste {
+    display: block;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu {
+    font-size: 1.2em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu4-section3 .menu-oeuvre_maitre {
+    width: auto;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre {
+    display: block;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
+    position: relative;
+    margin-left: 200px;
+    bottom: 0px;
+  }
+  .menu4-section4 .menu-sommet_art {
+    width: auto;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art {
+    display: block;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu {
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu-prix {
+    position: relative;
+    bottom: 0px;
+    font-size: 1em;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
+    display: none;
+  }
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
+    display: none;
+  }
+  .menu4-section2 .menu-esquisse {
+    width: auto;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste {
+    display: block;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section2 .menu-esquisse .menu-liste .menu-prix {
+    position: relative;
+    right: 100px;
+    bottom: 0px;
+    font-size: 0.9em;
+  }
+  .menu4-section3 .menu-oeuvre_maitre {
+    width: auto;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre {
+    display: block;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
+    position: relative;
+    margin-left: 100px;
+    bottom: 0px;
+    font-size: 0.9em;
+  }
+  .menu4-section4 .menu-sommet_art {
+    width: auto;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art {
+    display: block;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu {
+    font-size: 1em;
+    margin-left: 0px;
+    color: #280bc9;
+  }
+  .menu4-section4 .menu-sommet_art .menu-art .menu-prix {
+    position: relative;
+    margin-left: 100px;
+    bottom: 0px;
+    font-size: 0.9em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
