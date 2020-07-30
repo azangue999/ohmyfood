@@ -131,6 +131,14 @@ header{
     }
     }
 }
+@media screen and (max-width:1024px){
+    header{
+        width: auto;
+        text-align: center;
+    }
+}
+
+
 //menu principal
 
 /*titres*/
@@ -147,6 +155,7 @@ h1{
     text-align: center;
     margin-top: 80px;
 }
+
 %paragraphe{
     position: relative;
             top:135px;
@@ -155,12 +164,15 @@ h1{
             
 }
 
+
+
+
 .section1{
     display: flex;
     justify-content: space-around;
     a{text-decoration: none;}
     .section1-note_enchantee{
-        @extend %border;
+       @extend %border;
         background-color:  #fdd7d7;
         margin-left: 250px;
         transition: all 200ms ease-in-out ;
@@ -214,6 +226,7 @@ h1{
       
     }
 }
+
 .section2{
     display: flex;
     justify-content: space-around;
@@ -299,15 +312,26 @@ h1{
     }
 }
 
+
+
+
+
 //fin menu principal
 
 
 
 //début menu1
 
+
+
+
+
+
 #bloc_page_menu1{
     background-color:  #fdd7d7;
 }
+
+
 .menu1-section1{
     text-align: center;
     margin-top: 20px;
@@ -382,6 +406,10 @@ $menu1-family:"courgette",sans-serif;
     display: inline-block;
 }
 
+
+
+
+
 .menu1-section2{
     font-family:$menu1-family;
     margin-bottom: 100px;
@@ -444,6 +472,8 @@ $menu1-family:"courgette",sans-serif;
 
 }
 
+
+
 .menu1-section4{
     font-family:$menu1-family;
     margin-bottom: 100px;
@@ -478,6 +508,10 @@ $menu1-family:"courgette",sans-serif;
 }
 
 }
+
+
+
+
 .footer{
     display: flex;
     margin-bottom: 50px;
@@ -1018,3 +1052,1240 @@ footer{
     }
    
 }
+
+
+
+
+
+
+
+
+
+//media querie pour header et footer
+
+@media screen and (max-width:1200px){
+    #bloc_page{
+        width: auto;
+      }
+}
+@media screen and (max-width:400px){
+    header{
+       font-size: 0.6em;
+       width: auto;
+       height: 100px;
+   
+      }
+}
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    footer{
+        width: 100%;
+      position: fixed; 
+      
+      font-size: 1em;
+      text-align: center;  
+      .mention_legale{
+         width: auto;
+         position: static;
+      }
+      .contactez_nous{
+                width: auto;
+                position: static;
+                margin-left: 10px;
+                margin-right: 10px;
+      }
+    }
+    header{
+        width:100%;
+    }
+}
+
+
+
+@media screen and (max-width:1025px){
+    .mention_legale{
+      margin-left:10px ;
+        
+         }
+}
+
+
+
+//@media menu principal
+
+@media screen and (max-width:1025px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:300px ;
+        }
+        .section1-chic_francaise{
+            margin-left: 300px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:300px ;
+        }
+        .section2-palettegout{
+            margin-left: 300px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:1025px){
+    .section3{
+      .btn{
+          position: static;
+          margin-left: 280px;
+      }
+        
+         }
+}
+
+
+@media screen and (max-width:780px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:200px ;
+        }
+        .section1-chic_francaise{
+            margin-left: 200px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:200px ;
+        }
+        .section2-palettegout{
+            margin-left: 200px;
+        }
+    }
+    
+
+    .section3{
+        .btn{
+            position: static;
+            margin-left: 160px;
+        }
+          
+           }
+
+    
+}
+
+
+
+
+@media screen and (max-width:650px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:0px ;
+           
+        }
+        .section1-chic_francaise{
+            margin-left: 0px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:0px ;
+        }
+        .section2-palettegout{
+            margin-left: 0px;
+        }
+    }
+    
+
+    .section3{
+        .btn{
+            position: static;
+            margin-left: 0px;
+            font-size: 1.5em;
+            width: 350px;
+        }
+          
+          }
+    
+}
+
+
+//media queries menu 1
+
+@media screen and (max-width:1200px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu1-section2{ 
+     .menu-preludes{ 
+       width: auto;
+     .menu-prelude{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             
+         }
+     }
+     }
+  }
+
+  .menu1-section3{ 
+    .menu-point_orgue{ 
+      width: auto;
+    .menu-orgue{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu1-section4{ 
+    .menu-mouvement_final{ 
+      width: auto;
+  
+    .menu-final{
+     display: block;
+        
+    
+    .menu{
+      position: relative;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       right: 200px;
+      
+    }
+ }
+ }
+ 
+ }
+
+ .footer{
+     margin-left: 300px;
+ }
+
+ }
+
+
+
+
+ 
+@media screen and (max-width:800px){
+    .menu1-section1{
+        .image_note{
+            width: 50px;
+            height: 50px;
+        }
+        .menu1-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu1-section2{ 
+     .menu-preludes{ 
+       width: auto;
+     .menu-prelude{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 200px;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu1-section3{ 
+    .menu-point_orgue{ 
+      width: auto;
+    .menu-orgue{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 200px;
+            bottom: 0px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu1-section4{ 
+    .menu-mouvement_final{ 
+      width: auto;
+  
+    .menu-final{
+     margin-left: 0cm;
+        
+    
+    .menu{
+        position: static;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       font-size: 1em;
+      
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+ .footer{
+     margin-left: 20px;
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:497px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu1-section2{ 
+     .menu-preludes{ 
+       width: auto;
+     .menu-prelude{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             right: 100px;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu1-section3{ 
+    .menu-point_orgue{ 
+      width: auto;
+    .menu-orgue{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 100px;
+            bottom: 0px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu1-section4{ 
+    .menu-mouvement_final{ 
+      width: auto;
+  
+    .menu-final{
+     margin-left: 0cm;
+        
+    
+    .menu{
+        position: static;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       font-size: 0.8em;
+      
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+ .footer{
+     margin-left: 20px;
+     font-size: 1em;
+ }
+
+ }
+
+
+
+ //Responsive design menu 2
+
+
+
+
+
+ @media screen and (max-width:1200px){
+    .menu2-section2, .menu2-section3, .menu2-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+           top:50px;
+            margin-left: 700px;
+             
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+         
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            
+            margin-left: 700px;
+            
+            
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     margin-left: 80px;
+        
+    
+    .menu{
+      
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       
+      
+    }
+ }
+ }
+ 
+ }
+
+ }
+
+
+
+
+ 
+@media screen and (max-width:850px){
+    .menu2-header{
+       
+        .menu2-header_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+             font-size: 1.1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+          
+             margin-left: 200px;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+        font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+           
+            margin-left: 200px;
+            bottom: 0px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     margin-left: 0cm;
+        
+    
+    .menu{
+        
+        color:rgb(3, 3, 202);
+       font-size: 1em;
+      
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:497px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+             font-size: 0.9em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             margin-left: 100px;
+             font-size: 0.8em;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+            font-size: 0.9em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+           font-size: 0.9em;
+            bottom: 0px;
+            margin-left: 100px;
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     margin-left: 0cm;
+      
+    
+    .menu{
+     
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       font-size: 0.9em;
+      
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+
+ }
+
+
+
+ //media queri page 3
+
+
+
+ 
+@media screen and (max-width:1200px){
+    .menu3-section2, .menu3-section3, .menu3-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             font-size: 1em;
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ 
+ }
+
+
+
+
+ 
+@media screen and (max-width:850px){
+    .menu3-section1{
+        
+        .menu3-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 200px;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 200px;
+            bottom: 0px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 200px;
+            bottom: 0px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:630px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             right: 100px;
+             bottom: 0px;
+             font-size: 0.9em;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 100px;
+            bottom: 0px;
+            font-size: 0.9em;
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 0.9em;
+        }
+    }
+ }
+ 
+ }
+
+
+ }
+
+
+ //media querie page4
+
+
+ 
+
+ 
+@media screen and (max-width:1200px){
+    .menu4-section2, .menu4-section3, .menu4-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             font-size: 1em;
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ 
+ }
+
+
+
+
+ 
+@media screen and (max-width:830px){
+    .menu4-section1{
+        
+        .menu4-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 200px;
+             bottom: 0px;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 200px;
+            bottom: 0px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            bottom: 0px;
+            font-size: 1em;
+            margin-left: 200px;
+        }
+    }
+ }
+ 
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:630px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             right: 100px;
+             bottom: 0px;
+             font-size: 0.9em;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 100px;
+            bottom: 0px;
+            font-size: 0.9em;
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 100px;
+            bottom: 0px;
+            font-size: 0.9em;
+        }
+    }
+ }
+ 
+ }
+
+
+ }
+
+
+
+
+
+
