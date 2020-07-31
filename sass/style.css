@@ -72,6 +72,7 @@
 /*body et block de page*/
 #bloc_page {
   width: 1340px;
+  background-color: #ffd900;
 }
 
 /*variable*/
@@ -534,126 +535,121 @@ h1 {
 }
 
 #bloc_page_menu2 {
-  background-color: white;
+  background-color: #faf8f8;
 }
 
-.menu2-section1 {
+.menu2-header {
   text-align: center;
   margin-top: 20px;
 }
 
-.menu2-section1 h2 {
-  font-family: "Devonshire",  sans-serif;
-  font-size: 3em;
-  margin-bottom: 100px;
-  font-family: "CroissantOne", Arial, sans-serif;
+.menu2-header h2 {
+  font-family: "CroissantOne", sans-serif;
   background: -webkit-gradient(linear, right top, left top, from(#7f49fd), to(#ec7403));
   background: linear-gradient(to left, #7f49fd, #ec7403);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  margin-bottom: 100px;
 }
 
 .menu2-section2 {
   font-family: sans-serif;
+  font-size: 1.1em;
   margin-bottom: 100px;
-  color: #f58c03;
+  background: -webkit-gradient(linear, right top, left top, from(#f58c03), to(#f58c03));
+  background: linear-gradient(to left, #f58c03, #f58c03);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu2-section2 h2 {
   font-size: 1.5em;
-  font-weight: 100;
-  padding-bottom: 50px;
-  position: relative;
-  color: #f58c03;
+  margin-bottom: 50px;
 }
 
 .menu2-section2 h2::before {
+  top: 365px;
+  left: 200px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  left: 160px;
-  top: 10px;
   background-color: #f58c03;
 }
 
 .menu2-section2 h2::after {
-  left: 750px;
+  top: 365px;
+  left: 850px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  top: 15px;
   background-color: #f58c03;
 }
 
-.menu2-section2 .menu-pour_appetit {
-  font-size: 1em;
-}
-
-.menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
-  font-size: 1.3em;
+.menu2-section2 .menu-pour_appetit .menu-appetit .menu {
+  margin-left: 300px;
 }
 
 .menu2-section3 {
   font-family: sans-serif;
+  font-size: 1.1em;
   margin-bottom: 100px;
-  color: #ad19ca;
+  background: -webkit-gradient(linear, right top, left top, from(#ad19ca), to(#ad19ca));
+  background: linear-gradient(to left, #ad19ca, #ad19ca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu2-section3 h2 {
-  font-weight: 100;
   font-size: 1.5em;
   margin-bottom: 50px;
-  position: relative;
-  color: #ad19ca;
 }
 
 .menu2-section3 h2::before {
+  top: 655px;
+  left: 200px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  left: 160px;
-  top: 10px;
   background-color: #ad19ca;
 }
 
 .menu2-section3 h2::after {
-  left: 750px;
+  top: 655px;
+  left: 850px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  top: 15px;
   background-color: #ad19ca;
-}
-
-.menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
-  font-size: 1.3em;
 }
 
 .menu2-section4 {
   font-family: sans-serif;
+  background: -webkit-gradient(linear, right top, left top, from(blue), to(blue));
+  background: linear-gradient(to left, blue, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 100px;
-  position: relative;
-  color: #6b0ce7;
 }
 
 .menu2-section4 h2 {
   font-size: 1.5em;
-  font-weight: 100;
-  margin-bottom: 50px;
-  color: #6b0ce7;
 }
 
 .menu2-section4 h2::before {
+  top: 940px;
+  left: 200px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  left: 160px;
-  top: 10px;
-  background-color: #6b0ce7;
+  background-color: blue;
 }
 
 .menu2-section4 h2::after {
-  left: 750px;
+  top: 940px;
+  left: 850px;
+  height: 8px;
   width: 300px;
-  height: 6px;
-  top: 15px;
-  background-color: #6b0ce7;
+  background-color: blue;
 }
 
 .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
@@ -665,7 +661,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 300px;
 }
 
@@ -957,7 +953,7 @@ footer .contactez_nous {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 400px) {
   header {
     font-size: 0.6em;
     width: auto;
@@ -1050,18 +1046,16 @@ footer .contactez_nous {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .section1 {
     width: auto;
     display: block;
   }
   .section1 .section1-note_enchantee {
     margin-left: 0px;
-    width: 300px;
   }
   .section1 .section1-chic_francaise {
     margin-left: 0px;
-    width: 300px;
   }
   .section2 {
     display: block;
@@ -1069,19 +1063,15 @@ footer .contactez_nous {
   }
   .section2 .section2-delicepapille {
     margin-left: 0px;
-    width: 300px;
   }
   .section2 .section2-palettegout {
     margin-left: 0px;
-    width: 300px;
   }
   .section3 .btn {
     position: static;
     margin-left: 0px;
-    padding-top: 7px;
-    font-size: 1em;
-    width: 150px;
-    height: 30px;
+    font-size: 1.5em;
+    width: 350px;
   }
 }
 
@@ -1163,12 +1153,11 @@ footer .contactez_nous {
     font-size: 1.2em;
     margin-left: 0px;
     color: #280bc9;
-    width: 350px;
   }
   .menu1-section2 .menu-preludes .menu-prelude .menu-prix {
     position: relative;
-    margin-left: 400px;
-    bottom: 45px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu1-section3 .menu-point_orgue {
     width: auto;
@@ -1177,14 +1166,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu1-section3 .menu-point_orgue .menu-orgue .menu {
-    width: 350px;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
     position: relative;
-    margin-left: 400px;
-    bottom: 45px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu1-section4 .menu-mouvement_final {
     width: auto;
@@ -1197,17 +1185,13 @@ footer .contactez_nous {
     color: #0303ca;
     margin-top: 1.5em;
     font-size: 1em;
-    width: 350px;
   }
   .footer {
     margin-left: 20px;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .menu1-section2 h2, .menu1-section3 h2, .menu1-section4 h2 {
-    font-size: 1.3em;
-  }
+@media screen and (max-width: 497px) {
   .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
     display: none;
   }
@@ -1224,13 +1208,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu1-section2 .menu-preludes .menu-prelude .menu-prix {
     position: relative;
-    right: 150px;
-    bottom: 35px;
-    font-size: 0.9em;
+    right: 100px;
+    bottom: 0px;
   }
   .menu1-section3 .menu-point_orgue {
     width: auto;
@@ -1242,13 +1224,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu1-section3 .menu-point_orgue .menu-orgue .menu-prix {
     position: relative;
-    margin-left: 250px;
-    bottom: 35px;
-    font-size: 0.9em;
+    margin-left: 100px;
+    bottom: 0px;
   }
   .menu1-section4 .menu-mouvement_final {
     width: auto;
@@ -1261,14 +1241,10 @@ footer .contactez_nous {
     color: #0303ca;
     margin-top: 1.5em;
     font-size: 0.8em;
-    width: 270px;
   }
   .footer {
     margin-left: 20px;
-    font-size: 0.9em;
-  }
-  #bloc_page_menu1 {
-    background-color: #f7f4f4;
+    font-size: 1em;
   }
 }
 
@@ -1290,10 +1266,8 @@ footer .contactez_nous {
     color: #280bc9;
   }
   .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
-    position: relative;
+    top: 50px;
     margin-left: 700px;
-    bottom: 20px;
-    font-size: 1.2em;
   }
   .menu2-section3 .menu-plaisir_papille {
     width: auto;
@@ -1306,27 +1280,22 @@ footer .contactez_nous {
     color: #280bc9;
   }
   .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
-    position: relative;
-    margin-left: 730px;
-    bottom: 22px;
-    font-size: 1.2em;
+    margin-left: 700px;
   }
   .menu2-section4 .menu-gourmendise_sucrée {
     width: auto;
   }
   .menu2-section4 .menu-gourmendise_sucrée .menu-sucré {
-    display: block;
+    margin-left: 80px;
   }
   .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
-    position: relative;
     color: #0303ca;
     margin-top: 1.5em;
-    right: 200px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .menu2-section1 .menu2-section1_titre {
+@media screen and (max-width: 850px) {
+  .menu2-header .menu2-header_titre {
     font-size: 2em;
   }
   .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
@@ -1342,15 +1311,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
-    font-size: 1.2em;
-    width: 350px;
+    font-size: 1.1em;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
-    position: relative;
-    margin-left: 400px;
-    bottom: 42px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu2-section3 .menu-plaisir_papille {
     width: auto;
@@ -1359,14 +1326,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
-    width: 350px;
+    font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
-    position: relative;
-    margin-left: 400px;
-    bottom: 42px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu2-section4 .menu-gourmendise_sucrée {
     width: auto;
@@ -1375,21 +1341,16 @@ footer .contactez_nous {
     margin-left: 0cm;
   }
   .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
-    position: static;
     color: #0303ca;
-    margin-top: 1.5em;
     font-size: 1em;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .menu2-section2 h2, .menu2-section3 h2, .menu2-section4 h2 {
-    font-size: 0.9em;
-  }
-  .menu2-section2 h2::before, .menu2-section3 h2::before, .menu2-section4 h2::before {
+@media screen and (max-width: 497px) {
+  .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
     display: none;
   }
-  .menu2-section2 h2::after, .menu2-section3 h2::after, .menu2-section4 h2::after {
+  .menu1-section2 h2::after, .menu1-section3 h2::after, .menu1-section4 h2::after {
     display: none;
   }
   .menu2-section2 .menu-pour_appetit {
@@ -1399,16 +1360,14 @@ footer .contactez_nous {
     display: block;
   }
   .menu2-section2 .menu-pour_appetit .menu-appetit .menu {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu2-section2 .menu-pour_appetit .menu-appetit .menu-prix {
-    position: relative;
-    right: 150px;
-    bottom: 20px;
-    font-size: 0.9em;
+    margin-left: 100px;
+    font-size: 0.8em;
+    bottom: 0px;
   }
   .menu2-section3 .menu-plaisir_papille {
     width: auto;
@@ -1417,16 +1376,14 @@ footer .contactez_nous {
     display: block;
   }
   .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu2-section3 .menu-plaisir_papille .menu-plaisir .menu-prix {
-    position: relative;
-    margin-left: 250px;
-    bottom: 40px;
     font-size: 0.9em;
+    bottom: 0px;
+    margin-left: 100px;
   }
   .menu2-section4 .menu-gourmendise_sucrée {
     width: auto;
@@ -1435,11 +1392,9 @@ footer .contactez_nous {
     margin-left: 0cm;
   }
   .menu2-section4 .menu-gourmendise_sucrée .menu-sucré .menu {
-    position: static;
     color: #0303ca;
     margin-top: 1.5em;
     font-size: 0.9em;
-    width: 200px;
   }
 }
 
@@ -1520,12 +1475,11 @@ footer .contactez_nous {
     font-size: 1.2em;
     margin-left: 0px;
     color: #280bc9;
-    width: 400px;
   }
   .menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
     position: relative;
-    margin-left: 450px;
-    bottom: 15px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu3-section3 .menu-bien_continuer {
     width: auto;
@@ -1534,14 +1488,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu3-section3 .menu-bien_continuer .menu-continuer .menu {
-    width: 400px;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
     position: relative;
-    margin-left: 450px;
-    bottom: 15px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu3-section4 .menu-bien_terminer {
     width: auto;
@@ -1550,14 +1503,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
-    width: 350px;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
     position: relative;
-    margin-left: 450px;
-    bottom: 15px;
+    margin-left: 200px;
+    bottom: 0px;
     font-size: 1em;
   }
 }
@@ -1579,12 +1531,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu3-section2 .menu-bien_commence .menu-commence .menu-prix {
     position: relative;
-    right: 200px;
-    bottom: 30px;
+    right: 100px;
+    bottom: 0px;
     font-size: 0.9em;
   }
   .menu3-section3 .menu-bien_continuer {
@@ -1597,12 +1548,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu3-section3 .menu-bien_continuer .menu-continuer .menu-prix {
     position: relative;
-    margin-left: 250px;
-    bottom: 30px;
+    margin-left: 100px;
+    bottom: 0px;
     font-size: 0.9em;
   }
   .menu3-section4 .menu-bien_terminer {
@@ -1614,17 +1564,12 @@ footer .contactez_nous {
   .menu3-section4 .menu-bien_terminer .menu-terminer .menu {
     margin-left: 0px;
     color: #280bc9;
-    width: 250px;
-    font-size: 1em;
   }
   .menu3-section4 .menu-bien_terminer .menu-terminer .menu-prix {
     position: relative;
-    margin-left: 250px;
+    margin-left: 700px;
     bottom: 20px;
     font-size: 0.9em;
-  }
-  #bloc_page_menu3 {
-    background-color: white;
   }
 }
 
@@ -1705,12 +1650,11 @@ footer .contactez_nous {
     font-size: 1.2em;
     margin-left: 0px;
     color: #280bc9;
-    width: 350px;
   }
   .menu4-section2 .menu-esquisse .menu-liste .menu-prix {
     position: relative;
-    margin-left: 400px;
-    bottom: 25px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu4-section3 .menu-oeuvre_maitre {
     width: auto;
@@ -1719,14 +1663,13 @@ footer .contactez_nous {
     display: block;
   }
   .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu {
-    width: 350px;
     margin-left: 0px;
     color: #280bc9;
   }
   .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
     position: relative;
-    margin-left: 400px;
-    bottom: 25px;
+    margin-left: 200px;
+    bottom: 0px;
   }
   .menu4-section4 .menu-sommet_art {
     width: auto;
@@ -1737,17 +1680,16 @@ footer .contactez_nous {
   .menu4-section4 .menu-sommet_art .menu-art .menu {
     margin-left: 0px;
     color: #280bc9;
-    width: 350px;
   }
   .menu4-section4 .menu-sommet_art .menu-art .menu-prix {
     position: relative;
-    bottom: 25px;
+    bottom: 0px;
     font-size: 1em;
-    margin-left: 400px;
+    margin-left: 200px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 630px) {
   .menu1-section2 h2::before, .menu1-section3 h2::before, .menu1-section4 h2::before {
     display: none;
   }
@@ -1764,12 +1706,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu4-section2 .menu-esquisse .menu-liste .menu-prix {
     position: relative;
-    right: 180px;
-    bottom: 30px;
+    right: 100px;
+    bottom: 0px;
     font-size: 0.9em;
   }
   .menu4-section3 .menu-oeuvre_maitre {
@@ -1782,12 +1723,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu4-section3 .menu-oeuvre_maitre .menu-maitre .menu-prix {
     position: relative;
-    margin-left: 230px;
-    bottom: 30px;
+    margin-left: 100px;
+    bottom: 0px;
     font-size: 0.9em;
   }
   .menu4-section4 .menu-sommet_art {
@@ -1800,12 +1740,11 @@ footer .contactez_nous {
     font-size: 1em;
     margin-left: 0px;
     color: #280bc9;
-    width: 200px;
   }
   .menu4-section4 .menu-sommet_art .menu-art .menu-prix {
     position: relative;
-    margin-left: 200px;
-    bottom: 30px;
+    margin-left: 100px;
+    bottom: 0px;
     font-size: 0.9em;
   }
 }
