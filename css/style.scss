@@ -1,85 +1,10 @@
-@font-face {
-    font-family: "MontserratRegular";
-    src: url("fonts/Montserrat-Regular.ttf") format('truetype');
-    src: url("fonts/Montserrat-Regular.otf") format('opentype');
-    src: url("fonts/Montserrat-Regular.eot");
-    src: url("fonts/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
-         url("fonts/Montserrat-Regular.woff2") format("woff2"),
-         url("fonts/Montserrat-Regular.woff") format("woff");
-}
-@font-face {
-    font-family: "CroissantOne";
-    src: url("fonts/CroissantOne-Regular.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "MontserratMedium";
-    font-weight: normal;
-    font-style: normal;
-    src: url("fonts/Montserrat-Medium.ttf") format('truetype');
-    src: url("fonts/Montserrat-Medium.otf") format('opentype');
-    src: url("fonts/Montserrat-Medium.eot");
-    src: url("fonts/Montserrat-Medium.eot?#iefix") format('embedded-opentype'),
-         url("fonts/Montserrat-Medium.woff2") format("woff2"),
-         url("fonts/Montserrat-Medium.woff") format("woff");
-}
-
-@font-face {
-    font-family: "MontserratSemiBold";
-    font-weight: 600;
-    font-style: normal;
-    src: url("fonts/Montserrat-SemiBold.ttf") format('truetype');
-    src: url("fonts/Montserrat-SemiBold.otf") format('opentype');
-    src: url("fonts/Montserrat-SemiBold.eot");
-    src: url("fonts/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'),
-         url("fonts/Montserrat-SemiBold.woff2") format("woff2"),
-         url("fonts/Montserrat-SemiBold.woff") format("woff");
-}
-
-
-@font-face {
-    font-family: "nimbus_bold";
-    src: url('fonts/NimbusRomNo9LBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: "nimbus_regular";
-    src: url('fonts/NimbusRomNo9L.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: "Segoe";
-    src: url("fonts/segoeprb.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "dancing-script";
-    src: url("fonts/dancing-script.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Courgette";
-    src: url("fonts/Courgette-Regular.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-
-
+ 
+ @import"../sass/utils/variables";
+ @import"../sass/utils/placeholders";
+ @import"../sass/base/polices";
+ @import"../sass/components/button";
+ 
+ 
 /*body et block de page*/
 
 
@@ -90,9 +15,6 @@
 
 
 /*variable*/
-
-$cd_font: #57a089;
-$cd_txt:#ddc03c;
 
 
 /*header*/
@@ -117,17 +39,17 @@ header{
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     @-webkit-keyframes changement-couleur{
-        0%{color:yellowgreen;}
-        25%{color:rgb(152, 221, 14);}
-        50%{color:rgb(178, 226, 5);}
-        75%{color:yellow;}
+        0%{color:$cleur_animation1;}
+        25%{color:$cleur_animation2;}
+        50%{color:$cleur_animation3;}
+        75%{color:$cleur_animation4;}
         100%{color:$cd_txt;}
     }
     @keyframes changement-couleur{
-        0%{color:yellowgreen;}
-        25%{color:rgb(152, 221, 14);}
-        50%{color:rgb(178, 226, 5);}
-        75%{color:yellow;}
+        0%{color:$cleur_animation1;}
+        25%{color:$cleur_animation2;}
+        50%{color:$cleur_animation3;}
+        75%{color:$cleur_animation4}
         100%{color:$cd_txt;}
     }
     }
@@ -148,22 +70,6 @@ h1{
     top:100px
 }
 /*section1*/
-%border{
-    border:1px silver solid;
-    box-shadow: 2px 2px 10px silver;
-    width: 350px;
-    height: 500px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-%paragraphe{
-    position: relative;
-            top:135px;
-            font-size: 1.5em;
-            text-decoration: none;
-            
-}
 
 
 
@@ -174,12 +80,12 @@ h1{
     a{text-decoration: none;}
     .section1-note_enchantee{
        @extend %border;
-        background-color:  #fdd7d7;
+        background-color: $font_main1;
         margin-left: 250px;
         transition: all 200ms ease-in-out ;
         &:hover{
             transform: scale(1.1);
-            background-color:darken( #fdd7d7, 5);
+            background-color:darken( $font_main1, 5);
         }
         .image_note{
             position: relative;
@@ -199,6 +105,8 @@ h1{
             font-size: 2.5em;
         }      
     }
+
+   
     .section1-chic_francaise{
         @extend %border;
         margin-right: 250px;
@@ -213,7 +121,7 @@ h1{
             @extend %paragraphe;
             top:180px;
             font-family: "CroissantOne", Arial, sans-serif;
-            background: linear-gradient(to left, #7f49fd, #ec7403);
+            background: linear-gradient(to left, $cleur_francaise, $cleur_fransaise2);
             -webkit-background-clip: text;
                     background-clip: text;
             -webkit-text-fill-color:transparent ;          
@@ -222,11 +130,12 @@ h1{
             top:160px;
             font-size: 2.5em;
             font-family: serif, Arial, Helvetica;
-            color:#ec7403;
+            color:$cleur_fransaise2;
         }
       
     }
 }
+
 
 .section2{
     display: flex;
@@ -245,7 +154,7 @@ h1{
             top:160px;
             font-size: 2.5em;
             font-family:"dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
-            background:linear-gradient(to right, rgb(3, 3, 202), rgb(23, 191, 233));
+            background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
             -webkit-background-clip: text;
                     background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -254,10 +163,12 @@ h1{
             top:140px;
             font-size: 2.5em;
             font-family: segoe, Arial, Helvetica, sans-serif;
-            color:rgb(37, 141, 167);
+            color: $cleur_delice2;
             
         }
     }
+
+   
     .section2-palettegout{
         @extend %border;
         margin-right: 260px;
@@ -271,7 +182,7 @@ h1{
             top:160px;
             font-size: 2.5em;
             font-family: "kaushan script", Tahoma, Verdana, sans-serif;
-            background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+            background:linear-gradient(to right, $cleur_palette, $cleur_palette2);
             -webkit-background-clip: text;
                     background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -280,38 +191,12 @@ h1{
             top:140px;
             font-size: 2.5em;
             font-family: segoe, Arial, Helvetica, sans-serif;
-            color:rgb(37, 141, 167);
+            color:$cleur_delice2;
             
         }
     }
 }
 
-.section3{
-    margin-bottom: 200px;
-   
-    .btn{
-        border:1px green solid;
-        border-radius: 10px;
-        width: 400px;
-        height: 50px;
-        position: relative;
-        margin-top: 90px;
-        text-align: center;
-        margin-left: 450px;
-        font-size: 2em;
-        padding: 5px;
-        background-color: $cd_font;
-        color:$cd_txt;
-        font-family: MontserratMedium, Arial, Helvetica, sans-serif;
-        cursor: pointer;
-        transition: all 200ms ease-in-out;
-        &:hover{
-            box-shadow: 5px 5px 12px black;
-            background-color:darken($cd_font, 5);
-        }
-
-    }
-}
 
 
 
@@ -329,7 +214,7 @@ h1{
 
 
 #bloc_page_menu1{
-    background-color:  #fdd7d7;
+    background-color:  $font_main1;
 }
 
 
@@ -374,37 +259,6 @@ h1{
       
     }
    
-}
-
-
-$menu1-family:"courgette",sans-serif; 
-%menu1-titre{
-    text-align: center;
-    font-size: 2em;
-    color:black;
-}
-%menu1-menu{
-    display:flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-%menu-list{
-    margin-left: 300px;
-    font-size: 1.2em;
-}
-%menu-prix{
-    margin-right: 350px;
-}
-
-%trait{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 10px;
-    top:20px;
-    left: 345px;
-    background-color: black;
-    display: inline-block;
 }
 
 
@@ -540,7 +394,8 @@ $menu1-family:"courgette",sans-serif;
 //début menu2
 
 
-
+$cleur_francaise:#7f49fd;
+$cleur_fransaise2:#ec7403;
 
 
 #bloc_page_menu2{
@@ -549,13 +404,13 @@ $menu1-family:"courgette",sans-serif;
 .menu2-section1{
     text-align: center;
     margin-top: 20px;
-    
+   
     h2{
         font-family: "Devonshire",  sans-serif;
         font-size:3em;
         margin-bottom: 100px;
         font-family: "CroissantOne", Arial, sans-serif;
-            background: linear-gradient(to left, #7f49fd, #ec7403);
+            background: linear-gradient(to left, $cleur_francaise, $cleur_fransaise2);
             -webkit-background-clip: text;
                     background-clip: text;
             -webkit-text-fill-color:transparent ; 
@@ -566,21 +421,21 @@ $menu1-family:"courgette",sans-serif;
 .menu2-section2{
     font-family:sans-serif;
     margin-bottom: 100px;
-    color: rgb(245, 140, 3);
+    color: $cleur_fransaise2;
     h2{
         @extend %menu1-titre;
         font-size: 1.5em;
         font-weight: 100;
         padding-bottom: 50px;
         position: relative;
-        color: rgb(245, 140, 3);
+        color: $cleur_fransaise2;
         &::before{
             @extend %trait;
             width: 300px;
             height: 6px;
             left: 160px;
             top:10px;
-            background-color:rgb(245, 140, 3);
+            background-color:$cleur_fransaise2;
            
           }
           &::after{
@@ -589,7 +444,7 @@ $menu1-family:"courgette",sans-serif;
               width: 300px;
               height: 6px;
               top:15px;
-              background-color:rgb(245, 140, 3);
+              background-color:$cleur_fransaise2;
           }
       
     }
@@ -602,7 +457,7 @@ $menu1-family:"courgette",sans-serif;
         }
         .menu-prix{
            @extend %menu-prix;
-           font-size: 1.3em;
+           font-size: 1em;
         }
     }
 
@@ -614,21 +469,21 @@ $menu1-family:"courgette",sans-serif;
 .menu2-section3{
     font-family:sans-serif;
     margin-bottom: 100px;
-    color:rgb(173, 25, 202);
+    color:$cleur_section3;
     h2{
         @extend %menu1-titre;
         font-weight: 100;
         font-size: 1.5em;
         margin-bottom: 50px;
         position: relative;
-        color:rgb(173, 25, 202); 
+        color:$cleur_section3; 
         &::before{
             @extend %trait;
             width: 300px;
             height: 6px;
             left: 160px;
             top:10px;
-            background-color:rgb(173, 25, 202);
+            background-color:$cleur_section3;
            
           }
           &::after{
@@ -637,7 +492,7 @@ $menu1-family:"courgette",sans-serif;
               width: 300px;
               height: 6px;
               top:15px;
-              background-color:rgb(173, 25, 202);
+              background-color:$cleur_section3;
           }
     }
 .menu-plaisir_papille{
@@ -649,7 +504,7 @@ $menu1-family:"courgette",sans-serif;
         }
         .menu-prix{
            @extend %menu-prix;
-           font-size: 1.3em;
+           font-size: 1em;
         }
     }
 
@@ -657,24 +512,25 @@ $menu1-family:"courgette",sans-serif;
 
 }
 
+
 .menu2-section4{
     font-family:sans-serif;
     margin-bottom: 100px;
     position: relative;
-    color:rgb(107, 12, 231);
+    color:$cleur_section4;
     h2{
         @extend %menu1-titre;
        font-size: 1.5em;
        font-weight: 100;
        margin-bottom: 50px;
-       color:rgb(107, 12, 231) ;
+       color:$cleur_section4;
        &::before{
         @extend %trait;
         width: 300px;
         height: 6px;
         left: 160px;
         top:10px;
-        background-color:rgb(107, 12, 231);
+        background-color:$cleur_section4;
        
       }
       &::after{
@@ -683,7 +539,7 @@ $menu1-family:"courgette",sans-serif;
           width: 300px;
           height: 6px;
           top:15px;
-          background-color:rgb(107, 12, 231);
+          background-color:$cleur_section4;
       }
     }
     .menu-gourmendise_sucrée{
@@ -721,7 +577,7 @@ $menu1-family:"courgette",sans-serif;
         font-size:4em;
         margin-bottom: 100px;
         font-family:"dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
-        background:linear-gradient(to right, rgb(3, 3, 202), rgb(23, 191, 233));
+        background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
         -webkit-background-clip: text;
                 background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -745,7 +601,7 @@ $menu1-family:"courgette",sans-serif;
             height: 6px;
             left: 220px;
             top:10px;
-            background-color:rgb(16, 16, 187);
+            background-color:$cleur_delice;
            
           }
           &::after{
@@ -754,7 +610,7 @@ $menu1-family:"courgette",sans-serif;
               width: 300px;
               height: 6px;
               top:15px;
-              background-color:rgb(16, 16, 187);
+              background-color:$cleur_delice;
           }
       
     }
@@ -767,7 +623,7 @@ $menu1-family:"courgette",sans-serif;
         }
         .menu-prix{
            @extend %menu-prix;
-           font-size: 1.3em;
+           font-size: 1em;
         }
     }
 
@@ -812,7 +668,7 @@ $menu1-family:"courgette",sans-serif;
         }
         .menu-prix{
            @extend %menu-prix;
-           font-size: 1.5em;
+           font-size: 1em;
         }
     }
 
@@ -855,7 +711,7 @@ $menu1-family:"courgette",sans-serif;
             }
             .menu-prix{
                @extend %menu-prix;
-               font-size: 1.5em;
+               font-size: 1em;
             }
         }
     
@@ -924,7 +780,7 @@ $menu1-family:"courgette",sans-serif;
         }
         .menu-prix{
            @extend %menu-prix;
-           font-size: 1.3em;
+           font-size: 1.1em;
         }
     }
 
@@ -948,7 +804,7 @@ $menu1-family:"courgette",sans-serif;
             height: 6px;
             left: 240px;
             top:10px;
-            background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+            background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
            
           }
           &::after{
@@ -957,7 +813,7 @@ $menu1-family:"courgette",sans-serif;
               width: 300px;
               height: 6px;
               top:15px;
-              background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+              background:linear-gradient(to left, $cleur_delice, $cleur_delice2);
           }
     }
 .menu-oeuvre_maitre{
