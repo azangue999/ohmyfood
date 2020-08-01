@@ -1,0 +1,439 @@
+
+$cleur_francaise:#7f49fd;
+$cleur_fransaise2:#ec7403;
+
+
+#bloc_page_menu2{
+    background-color: white;
+}
+.menu2-section1{
+    text-align: center;
+    margin-top: 20px;
+   
+    h2{
+        font-family: "Devonshire",  sans-serif;
+        font-size:3em;
+        margin-bottom: 100px;
+        font-family: "CroissantOne", Arial, sans-serif;
+            background: linear-gradient(to left, $cleur_francaise, $cleur_fransaise2);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color:transparent ; 
+    }
+   
+}
+
+.menu2-section2{
+    font-family:sans-serif;
+    margin-bottom: 100px;
+    color: $cleur_fransaise2;
+    h2{
+        @extend %menu1-titre;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-bottom: 50px;
+        position: relative;
+        color: $cleur_fransaise2;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 160px;
+            top:10px;
+            background-color:$cleur_fransaise2;
+           
+          }
+          &::after{
+              @extend %trait;
+              left:750px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:$cleur_fransaise2;
+          }
+      
+    }
+.menu-pour_appetit{
+    font-size: 1em;
+    .menu-appetit{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1em;
+        }
+    }
+
+}
+
+}
+
+
+.menu2-section3{
+    font-family:sans-serif;
+    margin-bottom: 100px;
+    color:$cleur_section3;
+    h2{
+        @extend %menu1-titre;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        position: relative;
+        color:$cleur_section3; 
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 160px;
+            top:10px;
+            background-color:$cleur_section3;
+           
+          }
+          &::after{
+              @extend %trait;
+              left:750px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:$cleur_section3;
+          }
+    }
+.menu-plaisir_papille{
+    
+    .menu-plaisir{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1em;
+        }
+    }
+
+}
+
+}
+
+
+.menu2-section4{
+    font-family:sans-serif;
+    margin-bottom: 100px;
+    position: relative;
+    color:$cleur_section4;
+    h2{
+        @extend %menu1-titre;
+       font-size: 1.5em;
+       font-weight: 100;
+       margin-bottom: 50px;
+       color:$cleur_section4;
+       &::before{
+        @extend %trait;
+        width: 300px;
+        height: 6px;
+        left: 160px;
+        top:10px;
+        background-color:$cleur_section4;
+       
+      }
+      &::after{
+          @extend %trait;
+          left:750px;
+          width: 300px;
+          height: 6px;
+          top:15px;
+          background-color:$cleur_section4;
+      }
+    }
+    .menu-gourmendise_sucrée{
+    
+        .menu-sucré{
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          font-size: 1.2em;
+          margin-left: 300px;
+          li{
+              margin-top: 10px;
+          }
+           
+        }
+    
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .menu2-section2, .menu2-section3, .menu2-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+         
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             font-size: 1.2em;
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 730px;
+            bottom: 22px;
+            font-size: 1.2em;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     display: block;
+        
+    
+    .menu{
+      position: relative;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       right: 200px;
+      
+    }
+ }
+ }
+ 
+ }
+
+ }
+
+
+
+
+ 
+@media screen and (max-width:800px){
+    .menu2-section1{
+       
+        .menu2-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+             width: 350px;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 400px;
+             bottom: 42px;
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+           width: 350px;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 400px;
+            bottom: 42px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     margin-left: 0cm;
+        
+    
+    .menu{
+        position: static;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       font-size: 1em;
+      
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:550px){
+    .menu2-section2, .menu2-section3, .menu2-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+          font-size: 0.9em;
+      }
+        
+     }
+    .menu2-section2{ 
+     .menu-pour_appetit{ 
+       width: auto;
+     .menu-appetit{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             width: 200px;
+             
+         }
+         .menu-prix{
+             position: relative;
+             right: 150px;
+             bottom: 20px;
+             font-size: 0.9em;
+             
+         }
+     }
+     }
+  }
+
+  .menu2-section3{ 
+    .menu-plaisir_papille{ 
+      width: auto;
+    .menu-plaisir{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 200px;
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 250px;
+            bottom: 40px;
+            font-size: 0.9em;
+        }
+    }
+    }
+ }
+
+
+ .menu2-section4{ 
+    .menu-gourmendise_sucrée{ 
+      width: auto;
+  
+    .menu-sucré{
+     margin-left: 0cm;
+        
+    
+    .menu{
+        position: static;
+        color:rgb(3, 3, 202);
+       margin-top: 1.5em;
+       font-size: 0.9em;
+      width: 200px;
+      
+      
+    }
+ }
+ }
+ 
+ }
+
+
+ }
+
+

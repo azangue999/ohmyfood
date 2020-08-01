@@ -1,0 +1,248 @@
+
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    a{text-decoration: none;}
+    .section1-note_enchantee{
+       @extend %border;
+        background-color: $font_main1;
+        margin-left: 250px;
+        transition: all 200ms ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken( $font_main1, 5);
+        }
+        .image_note{
+            position: relative;
+            top:180px;
+            width: 50px;
+            height: 50px;
+        }
+        .section1-note_enchantee_paragraphe{
+            @extend %paragraphe;
+            font-family: "Devonshire",  sans-serif;
+            color:#3a3636;
+            font-size: 2em;
+        }
+        h1{
+            font-family: 'Segoe', Tahoma,  Verdana, sans-serif;
+            color:#353535;
+            font-size: 2.5em;
+        }      
+    }
+
+   
+    .section1-chic_francaise{
+        @extend %border;
+        margin-right: 250px;
+        transition: all 200ms ease-in-out ;
+        background-color: #faf3f3;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken(white, 5);
+        }
+         
+        .section1-chicfrancaise_paragraphe{
+            @extend %paragraphe;
+            top:180px;
+            font-family: "CroissantOne", Arial, sans-serif;
+            background: linear-gradient(to left, $cleur_francaise, $cleur_fransaise2);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color:transparent ;          
+        }
+        h1{
+            top:160px;
+            font-size: 2.5em;
+            font-family: serif, Arial, Helvetica;
+            color:$cleur_fransaise2;
+        }
+      
+    }
+}
+
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+    a{text-decoration: none;}
+    .section2-delicepapille{
+        @extend %border;
+        margin-left: 260px;
+        transition: all 200ms ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken( white, 5);
+        }
+        .section2-delicepapille_paragraphe{
+            @extend %paragraphe;
+            top:160px;
+            font-size: 2.5em;
+            font-family:"dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1{
+            top:140px;
+            font-size: 2.5em;
+            font-family: segoe, Arial, Helvetica, sans-serif;
+            color: $cleur_delice2;
+            
+        }
+    }
+
+   
+    .section2-palettegout{
+        @extend %border;
+        margin-right: 260px;
+        transition: all 200ms ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+            background-color:darken( white, 5);
+        }
+        .section2-palettegout_paragraphe{
+            @extend %paragraphe;
+            top:160px;
+            font-size: 2.5em;
+            font-family: "kaushan script", Tahoma, Verdana, sans-serif;
+            background:linear-gradient(to right, $cleur_palette, $cleur_palette2);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1{
+            top:140px;
+            font-size: 2.5em;
+            font-family: segoe, Arial, Helvetica, sans-serif;
+            color:$cleur_delice2;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1025px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:300px ;
+        }
+        .section1-chic_francaise{
+            margin-left: 300px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:300px ;
+        }
+        .section2-palettegout{
+            margin-left: 300px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:1025px){
+    .section3{
+      .btn{
+          position: static;
+          margin-left: 280px;
+      }
+        
+         }
+}
+
+
+@media screen and (max-width:780px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:200px ;
+        }
+        .section1-chic_francaise{
+            margin-left: 200px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:200px ;
+        }
+        .section2-palettegout{
+            margin-left: 200px;
+        }
+    }
+    
+
+    .section3{
+        .btn{
+            position: static;
+            margin-left: 160px;
+        }
+          
+           }
+
+    
+}
+
+
+
+
+@media screen and (max-width:500px){
+    .section1{
+        width: auto;
+        display: block;
+        .section1-note_enchantee{
+            margin-left:0px ;
+           width: 300px;
+        }
+        .section1-chic_francaise{
+            margin-left: 0px;
+            width: 300px;
+        }
+      }
+    .section2{
+        display: block;
+        width: auto;
+        .section2-delicepapille{
+            margin-left:0px ;
+            width: 300px;
+        }
+        .section2-palettegout{
+            margin-left: 0px;
+            width: 300px;
+        }
+    }
+    
+
+    .section3{
+        .btn{
+            position: static;
+            margin-left: 0px;
+            padding-top: 7px;
+            font-size: 1em;
+            width: 150px;
+            height: 30px;
+           
+        }
+          
+          }
+    
+}

@@ -1,0 +1,43 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $cd_font;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+    font-size:1.5em;
+    font-family: "MontserratRegular", Arial, sans-serif;
+    font-weight: bold;
+    .mention_legale{
+        color:$cd_txt;
+        position: relative;
+        left: 20px;
+        top:25px;
+    }
+    .contactez_nous{
+        color:$cd_txt;
+        position: relative;
+        right:30px;
+        top:25px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+//media querie pour header et footer
+
+
+
+
+
+
+
+
