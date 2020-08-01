@@ -1,0 +1,456 @@
+
+ #bloc_page_menu4{
+    background-color: white;
+}
+.menu4-section1{
+    text-align: center;
+    margin-top: 20px;
+    
+    h2{
+        font-family: "kaushan script", Tahoma, Verdana, sans-serif;
+        background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+        margin-bottom: 100px;
+    }
+   
+}
+
+.menu4-section2{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    position: relative;
+    
+    h2{
+        @extend %menu1-titre;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-bottom: 50px;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 240px;
+            top:10px;
+            background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+           
+          }
+          &::after{
+              @extend %trait;
+              left:800px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+          }
+      
+    }
+.menu-esquisse{
+    font-size: 1em;
+    .menu-liste{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1.1em;
+        }
+    }
+
+}
+
+}
+
+
+.menu4-section3{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    position: relative;
+    h2{
+        @extend %menu1-titre;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 240px;
+            top:10px;
+            background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
+           
+          }
+          &::after{
+              @extend %trait;
+              left:800px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background:linear-gradient(to left, $cleur_delice, $cleur_delice2);
+          }
+    }
+.menu-oeuvre_maitre{
+    
+    .menu-maitre{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1.5em;
+        }
+    }
+
+}
+
+}
+
+.menu4-section4{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+       font-size: 1.5em;
+       font-weight: 100;
+       margin-bottom: 50px;
+       position: relative;
+       &::before{
+        @extend %trait;
+        width: 300px;
+        height: 6px;
+        left: 240px;
+        top:10px;
+        background:linear-gradient(to right, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+       
+      }
+      &::after{
+          @extend %trait;
+          left:800px;
+          width: 300px;
+          height: 6px;
+          top:15px;
+          background:linear-gradient(to left, RGBa(70, 202, 70, 1), RGBa(70, 202, 70, 0.4));
+      }
+    }
+    .menu-sommet_art{
+        .menu-art{
+            @extend  %menu1-menu;
+            .menu{
+               @extend %menu-list;
+            }
+            .menu-prix{
+               @extend %menu-prix;
+               font-size: 1.5em;
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+
+//footer pour tous les menus
+
+@media screen and (max-width:500px){
+    footer{
+        width: 100%;
+      position: fixed; 
+      
+      font-size: 1em;
+      text-align: center;  
+      .mention_legale{
+         width: auto;
+         position: static;
+      }
+      .contactez_nous{
+                width: auto;
+                position: static;
+                margin-left: 10px;
+                margin-right: 10px;
+      }
+    }
+    header{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media screen and (max-width:1200px){
+    .menu4-section2, .menu4-section3, .menu4-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             font-size: 1em;
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ 
+ }
+
+
+
+
+ 
+@media screen and (max-width:830px){
+    .menu4-section1{
+        
+        .menu4-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             width: 350px;
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 400px;
+             bottom: 25px;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+           width: 350px;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 400px;
+            bottom: 25px;
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 350px;
+        }
+        .menu-prix{
+            position: relative;
+            bottom: 25px;
+            font-size: 1em;
+            margin-left: 400px;
+        }
+    }
+ }
+ 
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:550px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu4-section2{ 
+     .menu-esquisse{ 
+       width: auto;
+     .menu-liste{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             width: 200px;
+         }
+         .menu-prix{
+             position: relative;
+             right: 180px;
+             bottom: 30px;
+             font-size: 0.9em;
+             
+         }
+     }
+     }
+  }
+
+  .menu4-section3{ 
+    .menu-oeuvre_maitre{ 
+      width: auto;
+    .menu-maitre{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 200px;
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 230px;
+            bottom: 30px;
+            font-size: 0.9em;
+        }
+    }
+    }
+ }
+
+
+ .menu4-section4{ 
+    .menu-sommet_art{ 
+      width: auto;
+  
+      .menu-art{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 200px;
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 200px;
+            bottom: 30px;
+            font-size: 0.9em;
+        }
+    }
+ }
+ 
+ }
+
+
+ }
+

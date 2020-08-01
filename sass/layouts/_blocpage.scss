@@ -1,0 +1,41 @@
+
+
+#bloc_page{
+    width: 1340px;
+   
+}
+
+
+@media screen and (max-width:1024px){
+    header{
+         width: auto;
+         text-align: center;
+     }
+ }
+ 
+ @media screen and (max-width:1200px){
+    #bloc_page{
+        width: auto;
+      }
+}
+@media screen and (max-width:550px){
+    header{
+       font-size: 0.6em;
+       width: auto;
+       height: 100px;
+   
+      }
+}
+
+ @media screen and (max-width:1025px){
+    .mention_legale{
+      margin-left:10px ;
+        
+         }
+}
+
+.footer{
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+

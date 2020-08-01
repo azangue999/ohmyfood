@@ -1,0 +1,44 @@
+header{
+    text-align: center;
+    background-color:$cd_font;
+    height: 140px;
+    strong{
+    font-family:"MontserratExtraBold",  sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    position: relative;
+    top:30px;
+    color: yellowgreen;
+    -webkit-animation-name:changement-couleur;
+            animation-name:changement-couleur;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    @-webkit-keyframes changement-couleur{
+        0%{color:$cleur_animation1;}
+        25%{color:$cleur_animation2;}
+        50%{color:$cleur_animation3;}
+        75%{color:$cleur_animation4;}
+        100%{color:$cd_txt;}
+    }
+    @keyframes changement-couleur{
+        0%{color:$cleur_animation1;}
+        25%{color:$cleur_animation2;}
+        50%{color:$cleur_animation3;}
+        75%{color:$cleur_animation4}
+        100%{color:$cd_txt;}
+    }
+    }
+}
+
+
+h1{
+    position: relative;
+    top:100px
+} 
+
+
+

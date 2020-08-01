@@ -1,0 +1,423 @@
+
+#bloc_page_menu3{
+    background-color: rgb(236, 235, 233);
+}
+.menu3-section1{
+    text-align: center;
+    margin-top: 20px;
+    
+    h2{
+        font-family: "Devonshire",  sans-serif;
+        font-size:4em;
+        margin-bottom: 100px;
+        font-family:"dancing-script", 'Segoe UI', Tahoma, Verdana, sans-serif;
+        background:linear-gradient(to right, $cleur_delice, $cleur_delice2);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+   
+}
+
+.menu3-section2{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    
+    h2{
+        @extend %menu1-titre;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-bottom: 50px;
+        position: relative;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 220px;
+            top:10px;
+            background-color:$cleur_delice;
+           
+          }
+          &::after{
+              @extend %trait;
+              left:820px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:$cleur_delice;
+          }
+      
+    }
+.menu-bien_commence{
+    font-size: 1em;
+    .menu-commence{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1em;
+        }
+    }
+
+}
+
+}
+
+
+.menu3-section3{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    h2{
+        @extend %menu1-titre;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        position: relative;
+        &::before{
+            @extend %trait;
+            width: 300px;
+            height: 6px;
+            left: 220px;
+            top:10px;
+            background-color:rgba(0, 102, 255, 0.8);
+           
+          }
+          &::after{
+              @extend %trait;
+              left:820px;
+              width: 300px;
+              height: 6px;
+              top:15px;
+              background-color:rgba(0, 102, 255, 0.8);
+          }
+    }
+.menu-bien_continuer{
+    
+    .menu-continuer{
+        @extend  %menu1-menu;
+        .menu{
+           @extend %menu-list;
+        }
+        .menu-prix{
+           @extend %menu-prix;
+           font-size: 1em;
+        }
+    }
+
+}
+
+}
+
+.menu3-section4{
+    font-family:$menu1-family;
+    margin-bottom: 100px;
+    position: relative;
+    h2{
+        @extend %menu1-titre;
+       font-size: 1.5em;
+       font-weight: 100;
+       margin-bottom: 50px;
+       &::before{
+        @extend %trait;
+        width: 300px;
+        height: 6px;
+        left: 220px;
+        top:10px;
+        background-color:blue;
+       
+      }
+      &::after{
+          @extend %trait;
+          left:820px;
+          width: 300px;
+          height: 6px;
+          top:15px;
+          background-color:blue;
+      }
+    }
+    .menu-bien_terminer{
+        .menu-terminer{
+            @extend  %menu1-menu;
+            .menu{
+               @extend %menu-list;
+            }
+            .menu-prix{
+               @extend %menu-prix;
+               font-size: 1em;
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+ 
+@media screen and (max-width:1200px){
+    .menu3-section2, .menu3-section3, .menu3-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+         
+            margin-left: 90px;
+             color: rgb(40, 11, 201);
+             
+         }
+         .menu-prix{
+             font-size: 1em;
+             position: relative;
+             margin-left: 700px;
+             bottom: 20px;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+        
+           margin-left: 90px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 700px;
+            bottom: 20px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ 
+ }
+
+
+
+
+ 
+@media screen and (max-width:850px){
+    .menu3-section1{
+        
+        .menu3-section1_titre{
+            font-size: 2em;
+        }
+    }
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+             font-size: 1.2em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             width: 400px;
+         }
+         .menu-prix{
+             position: relative;
+             margin-left: 450px;
+             bottom: 15px;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+           width: 400px;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 450px;
+            bottom: 15px;
+            
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+           width: 350px;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 450px;
+            bottom: 15px;
+            font-size: 1em;
+        }
+    }
+ }
+ 
+ }
+
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width:630px){
+    .menu1-section2, .menu1-section3, .menu1-section4{
+      h2{
+        &::before{
+            display: none;
+          }
+          &::after{
+              display: none;
+          }
+      }
+        
+     }
+    .menu3-section2{ 
+     .menu-bien_commence{ 
+       width: auto;
+     .menu-commence{
+         display: block;
+         .menu{
+             font-size: 1em;
+            margin-left: 0px;
+             color: rgb(40, 11, 201);
+             width: 200px;
+             
+         }
+         .menu-prix{
+             position: relative;
+             right: 200px;
+             bottom: 30px;
+             font-size: 0.9em;
+             
+         }
+     }
+     }
+  }
+
+  .menu3-section3{ 
+    .menu-bien_continuer{ 
+      width: auto;
+    .menu-continuer{
+        display: block;
+        .menu{
+            font-size: 1em;
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 200px;
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 250px;
+            bottom: 30px;
+            font-size: 0.9em;
+        }
+    }
+    }
+ }
+
+
+ .menu3-section4{ 
+    .menu-bien_terminer{ 
+      width: auto;
+  
+      .menu-terminer{
+        display: block;
+        .menu{
+        
+           margin-left: 0px;
+            color: rgb(40, 11, 201);
+            width: 250px;
+            font-size: 1em;
+        }
+        .menu-prix{
+            position: relative;
+            margin-left: 250px;
+            bottom: 20px;
+            font-size: 0.9em;
+        }
+    }
+ }
+ 
+ }
+
+  #bloc_page_menu3{
+      background-color: white;
+  }
+ }
